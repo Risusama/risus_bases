@@ -1,0 +1,12 @@
+Configurar: 
+
+- Configurar os Valores dos ingredientes usados [WoodenLog]
+
+- Adicionar Variavel de tempo para as paredes e Portoes
+
+
+Adicionar:
+
+- Torre de vigia
+
+  
