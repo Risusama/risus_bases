@@ -1,6 +1,4 @@
 # risus_bases
- 
-# risus_bases
   Public repository for the now open-sourced oldnags_bases DayZ addon. (Although renamed in a *very original* way ;D)
   
   The addon has been announced open-source for a while now, but I'm not aware of any public repositories for it with the source available in human-readable form, so I asked Oldnags for permission to upload it here.
