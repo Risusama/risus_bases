@@ -18,4 +18,5 @@
  - Dinho & Morette for the original "Doors and Barricades - ProjectBR" addon on Steam Workshop (https://steamcommunity.com/workshop/filedetails/?id=2592742479)
  - Oldnag for the original "Oldnags_bases" addon, which is based on the ones above (https://steamcommunity.com/sharedfiles/filedetails/?id=2843035949)
  - Flukier Jupiter for the Well model (https://free3d.com/user/flukierjupiter, https://free3d.com/3d-model/well-73755.html)
+ - My friend Kingtaffi for helping make new models.
 
