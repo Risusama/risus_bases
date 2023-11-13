@@ -4,7 +4,7 @@ modded class Hologram
 	{
 		MoreDoorKitBase item_in_hands = MoreDoorKitBase.Cast( m_Player.GetHumanInventory().GetEntityInHands() );
 
-		if ( item_in_hands )
+		if (item_in_hands)
 		{
 			return item_in_hands.j_Door();
 		}
@@ -14,7 +14,7 @@ modded class Hologram
 
 	EntityAI PlaceEntity( EntityAI entity_for_placing )
 	{
-		if ( entity_for_placing.IsInherited( MoreDoorKitBase ))
+		if (entity_for_placing.IsInherited(MoreDoorBase))
 		{
 			return entity_for_placing;
 		}
@@ -26,7 +26,7 @@ modded class Hologram
 	{	
 		ItemBase item_in_hands = m_Parent;
 
-		if ( item_in_hands.IsInherited(MoreDoorKitBase))
+		if (item_in_hands.IsInherited(MoreDoorKitBase))
 		{
 			SetIsColliding(false);
 			return;
