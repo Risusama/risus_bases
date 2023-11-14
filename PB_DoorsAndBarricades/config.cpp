@@ -4,14 +4,14 @@ class CfgPatches
 	{
 		units[]=
 		{
-			"PB_PlankDoor_Kit",
-			"PB_WoodDoor_Kit",
-			"PB_MetalDoor_Kit",
-			"PB_PlankBarricade_Kit",
-			"PB_PlankDoorBarricade_Kit",
+			//"PB_PlankDoor_Kit",
+			//"PB_WoodDoor_Kit",
+			//"PB_MetalDoor_Kit",
+			//"PB_PlankBarricade_Kit",
+			//"PB_PlankDoorBarricade_Kit",
 			"PB_Well_Kit",
-			"PB_PlankWindow_Kit",
-			"PB_WoodGate_Kit",
+			//"PB_PlankWindow_Kit",
+			//"PB_WoodGate_Kit",
 			"PB_WoodWall_Kit",
 			////////////////////////////////////////////
 			///////////////OLDNAGS KITS//////////////////////
@@ -26,22 +26,22 @@ class CfgPatches
 			////////////////////////////////////////////
 			///////////////OLDNAGS//////////////////////
 			////////////////////////////////////////////
-			"PB_PlankDoor",
-			"PB_WoodDoor",
-			"PB_MetalDoor",
-			"PB_PlankBarricade",
-			"PB_MetalBarricade",
-			"PB_BrickBarricade",
-			"PB_PlankDoorBarricade",
-			"PB_MetalDoorBarricade",
-			"PB_BrickDoorBarricade",
+			//"PB_PlankDoor",
+			//"PB_WoodDoor",
+			//"PB_MetalDoor",
+			//"PB_PlankBarricade",
+			//"PB_MetalBarricade",
+			//"PB_BrickBarricade",
+			//"PB_PlankDoorBarricade",
+			//"PB_MetalDoorBarricade",
+			//"PB_BrickDoorBarricade",
 			"PB_Well",
-			"PB_PlankWindow",
-			"PB_MetalWindow",
-			"PB_WoodGate",
-			"PB_MetalGate",
+			//"PB_PlankWindow",
+			//"PB_MetalWindow",
+			//"PB_WoodGate",
+			//"PB_MetalGate",
 			"PB_WoodWall",
-			"PB_MetalWall",
+			//"PB_MetalWall",
 			////////////////////////////////////////////
 			///////////////OLDNAGS BASEPARTS//////////////////////
 			////////////////////////////////////////////
@@ -369,6 +369,7 @@ class CfgVehicles
 	};
 	
 	//KIT PORTA DE MADEIRA - T2
+	/* Disabled until new models have been made.
 	class PB_WoodDoor_Kit: MoreDoorKitBase
 	{
 		scope = 2;
@@ -427,7 +428,7 @@ class CfgVehicles
 			"Material_L2W2_WoodenPlanks"
 		};
 	};
-
+*/
 	//kit Wall - Kit Parede de Madeira - T1
 	class PB_WoodWall_Kit: MoreDoorKitBase
 	{
@@ -443,6 +444,7 @@ class CfgVehicles
 	};
 	
 	//KIT Barricada de Plank para Porta - T1
+	/* Disabled until new models have been made.
 	class PB_PlankDoorBarricade_Kit: MoreDoorKitBase
 	{
 		scope = 2;
@@ -455,7 +457,8 @@ class CfgVehicles
 			"Material_L2W2_WoodenPlanks"
 		};
 	};
-	
+	*/
+
 	//KIT WELL - POÇO DE AGUA PB_Well
 	class PB_Well_Kit: MoreDoorKitBase
 	{
@@ -473,6 +476,7 @@ class CfgVehicles
 	};
 
 	//KIT GATE - Portao de Madeira - T1
+	/* Disabled until new models have been made.
 	class PB_WoodGate_Kit: MoreDoorKitBase
 	{
 		scope = 2;
@@ -502,6 +506,7 @@ class CfgVehicles
 			"Material_MetalWire"
 		};
 	};
+	*/
 	////////////////////////////////////////////
 	///////////////OLDNAGS//////////////////////
 	////////////////////////////////////////////
@@ -763,6 +768,7 @@ class CfgVehicles
 	////////////////////////////////////////////
 
 	//Porta de MAdeira T2
+	/* Disabled until new models have been made.
 	class PB_WoodDoor: MoreDoorBase
 	{
 		scope = 2;
@@ -788,6 +794,8 @@ class CfgVehicles
 			};
 		};
 	};
+	
+
 	class PB_PlankDoor: MoreDoorBase
 	{
 		scope = 2;
@@ -878,6 +886,7 @@ class CfgVehicles
 	};
 
 	//Brick - Barricada de pedra T3
+
 	class PB_BrickBarricade: MoreDoorBase
 	{
 		scope = 2;
@@ -886,6 +895,7 @@ class CfgVehicles
 		model = "PB_DoorsAndBarricades\data\Brick\BrickBarricade.p3d";
 		class GUIInventoryAttachmentsProps{};
 	};
+	*/
 
 	//PAREDES
 	//Brick parede de Pedra T3
@@ -910,6 +920,7 @@ class CfgVehicles
 	};
 
 	//Barricada Madeira para Porta - T1
+	/* Disabled until new models have been made.
 	class PB_MetalWall: MoreDoorBase
 	{
 		scope = 2;
@@ -926,11 +937,12 @@ class CfgVehicles
 				attachmentSlots[] = {"Slot_Brick"};
 				icon = "cat_bb_material";
 				selection = "wall";
-			};*/
+			};*/ /*
 		};
 	};
-
+*/
 	//Barricada Madeira para Porta - T1
+	/* Disabled until new models have been made.
 	class PB_PlankDoorBarricade: MoreDoorBase
 	{
 		scope = 2;
@@ -982,7 +994,7 @@ class CfgVehicles
 		attachments[] = {"Stones"};
 		class GUIInventoryAttachmentsProps{};
 	};
-
+	*/
 	//Well - Poço
 	class PB_Well: Inventory_Base
 	{
@@ -1040,6 +1052,7 @@ class CfgVehicles
 	};
 
 	//Janela de Plank - T1
+	/* Disabled until new models have been made.
 	class PB_PlankWindow: MoreDoorBase
 	{
 		scope = 2;
@@ -1073,6 +1086,7 @@ class CfgVehicles
 	};
 
 	//Janela de Metal - T2
+	
 	class PB_MetalWindow: MoreDoorBase
 	{
 		scope = 2;
@@ -1091,6 +1105,8 @@ class CfgVehicles
 			};
 		};
 	};
+	
+	
 	class PB_WoodGate: MoreDoorBase
 	{
 		scope = 2;
@@ -1122,7 +1138,7 @@ class CfgVehicles
 			};
 		};
 	};
-
+	
 	//MetalGate
 	class PB_MetalGate: MoreDoorBase
 	{
@@ -1143,10 +1159,10 @@ class CfgVehicles
 			};
 		};
 	};
+	*/
 	////////////////////////////////////////////
 	///////////////OLDNAGS//////////////////////
 	////////////////////////////////////////////
-	//class PB_PlankDoorBarricade;
 
 
 	class BB_BaseWall: MoreDoorBase
