@@ -180,19 +180,18 @@ class MoreDoorKitBase extends ItemBase
 
 		if ( GetGame().IsServer() && hasTheGoodStuff() )
 		{
-			PlayerBase player_base = PlayerBase.Cast( player );
-			vector newPosition = player_base.GetLocalProjectionPosition();
-			vector newOrientation = player_base.GetLocalProjectionOrientation();
-
-			moreDoorKit = GetGame().CreateObject(this.j_Door(), newPosition, false );
-			moreDoorKit.SetPosition( newPosition );
-			moreDoorKit.SetOrientation( newOrientation );
-
-			this.Delete();
+			EntityAI moreDoorKit = EntityAI.Cast(GetGame().CreateObjectEx(j_Door(), position, ECE_PLACE_ON_SURFACE));
+			moreDoorKit.SetPosition(position);
+			moreDoorKit.SetOrientation(orientation);
 		}
 
 		SetIsDeploySound( true );
 		SetLifetime(3888000);
+	}
+	
+	override bool IsBasebuildingKit()
+	{
+		return true;
 	}
 
 	override bool IsDeployable()
