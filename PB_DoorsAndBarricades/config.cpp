@@ -684,7 +684,6 @@ class CfgVehicles
 			"MetalSheets2",
 			"Material_L3W1_WoodenPlanks",
 			"Material_L3W2_WoodenPlanks",
-			"Material_L3W2_WoodenPlanks"
 		};
 	};
 	class BB_LargeShack_Kit: MoreDoorKitBase
