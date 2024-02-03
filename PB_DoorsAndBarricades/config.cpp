@@ -5,7 +5,7 @@ class CfgPatches
 		units[]=
 		{
 			//"PB_PlankDoor_Kit",
-			//"PB_WoodDoor_Kit",
+			"PB_WoodDoor_Kit",
 			//"PB_MetalDoor_Kit",
 			//"PB_PlankBarricade_Kit",
 			//"PB_PlankDoorBarricade_Kit",
@@ -27,7 +27,7 @@ class CfgPatches
 			///////////////OLDNAGS//////////////////////
 			////////////////////////////////////////////
 			//"PB_PlankDoor",
-			//"PB_WoodDoor",
+			"PB_WoodDoor",
 			//"PB_MetalDoor",
 			//"PB_PlankBarricade",
 			//"PB_MetalBarricade",
@@ -369,7 +369,7 @@ class CfgVehicles
 	};
 	
 	//KIT PORTA DE MADEIRA - T2
-	/* Disabled until new models have been made.
+
 	class PB_WoodDoor_Kit: MoreDoorKitBase
 	{
 		scope = 2;
@@ -383,7 +383,7 @@ class CfgVehicles
 			"Material_MetalWire"
 		};
 	};
-
+	/* Disabled until new models have been made.
 	//KIT PORTA DE PLANK - T1
 	class PB_PlankDoor_Kit: MoreDoorKitBase
 	{
@@ -767,7 +767,7 @@ class CfgVehicles
 	////////////////////////////////////////////
 
 	//Porta de MAdeira T2
-	/* Disabled until new models have been made.
+
 	class PB_WoodDoor: MoreDoorBase
 	{
 		scope = 2;
@@ -794,7 +794,7 @@ class CfgVehicles
 		};
 	};
 	
-
+	/* Disabled until new models have been made.
 	class PB_PlankDoor: MoreDoorBase
 	{
 		scope = 2;
