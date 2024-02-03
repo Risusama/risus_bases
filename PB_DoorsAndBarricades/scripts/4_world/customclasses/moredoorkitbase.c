@@ -8,6 +8,7 @@ class MoreDoorKitBase extends ItemBase
 	string slotPlanks = "Material_WoodenPlanks";
 	string slotMetal = "Material_MetalSheets";
 	string slotLogs = "Material_WoodenLogs";
+	string slotLogs2 = "Material_L1_WoodenLogs"
 	string slotWire = "Material_MetalWire";
 	string slotStone = "Slot_Brick";
 
@@ -444,19 +445,17 @@ class PB_WoodWall_Kit extends MoreDoorKitBase
 {
 	override bool hasTheGoodStuff()
 	{
-		logCost = 2;
 		nailCost = 36;
-		//stoneCost = 40;
+		logCost = 4;
 
 		slot_id = InventorySlots.GetSlotIdFromString(slotNails36);
-		slot_id2 = InventorySlots.GetSlotIdFromString(slotLogs);
-		//slot_id3 = InventorySlots.GetSlotIdFromString(slotStone);
+		slot_id2 = InventorySlots.GetSlotIdFromString(slotLogs2);
+
 		slotCast = ItemBase.Cast( GetInventory().FindAttachment(slot_id) );
 		slotCast2 = ItemBase.Cast( GetInventory().FindAttachment(slot_id2) );
-		//slotCast3 = ItemBase.Cast( GetInventory().FindAttachment(slot_id3) );
+
 		j_Count = slotCast.GetQuantity();
 		j_Count2 = slotCast2.GetQuantity();
-		//j_Count3 = slotCast3.GetQuantity();
 
 		if( slotCast != NULL && slotCast2 != NULL )
 		{
@@ -481,9 +480,7 @@ class PB_WoodWall_Kit extends MoreDoorKitBase
 	override void ReturnGoodsFromDismantle()
 	{
 		ItemBase j_goods2 = ItemBase.Cast(GetInventory().CreateAttachment("Nail" ));
-		j_goods2.SetQuantity(16);
-		//ItemBase j_goods3 = ItemBase.Cast(GetInventory().CreateAttachment("Stone" ));
-		//j_goods3.SetQuantity(20);
+		j_goods2.SetQuantity(20);
 	}
 };
 
@@ -691,23 +688,21 @@ class BB_BaseWall_Kit extends MoreDoorKitBase
 {
 	override bool hasTheGoodStuff()
 	{
-		nailCost = 75;
-		plankCost2 = 20;
+		nailCost = 36;
+		logCost = 2;
 
-
-		slot_id = InventorySlots.GetSlotIdFromString(slotNails75);
-		slot_id2 = InventorySlots.GetSlotIdFromString(slotPlanks20);
+		slot_id = InventorySlots.GetSlotIdFromString(slotNails36);
+		slot_id2 = InventorySlots.GetSlotIdFromString(slotLogs);
 		
 		slotCast = ItemBase.Cast( GetInventory().FindAttachment(slot_id) );
 		slotCast2 = ItemBase.Cast( GetInventory().FindAttachment(slot_id2) );
 		
 		j_Count = slotCast.GetQuantity();
 		j_Count2 = slotCast2.GetQuantity();
-		
 
 		if( slotCast != NULL && slotCast2 != NULL )
 		{
-			if( j_Count >= nailCost && j_Count2 >= plankCost2 )
+			if( j_Count >= nailCost && j_Count2 >= logCost )
 			{
 				return true;
 			}
@@ -727,10 +722,8 @@ class BB_BaseWall_Kit extends MoreDoorKitBase
 
 	override void ReturnGoodsFromDismantle()
 	{
-		ItemBase j_goods = ItemBase.Cast(GetInventory().CreateAttachment("WoodenPlank" ));
-		j_goods.SetQuantity(20);
 		ItemBase j_goods2 = ItemBase.Cast(GetInventory().CreateAttachment("Nail" ));
-		j_goods2.SetQuantity(70);
+		j_goods2.SetQuantity(20);
 	}
 };
 //KIT SMALL SHACK

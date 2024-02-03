@@ -434,12 +434,12 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Wood Wall Kit | T1 |";
-		descriptionShort = "Nails: 36 | WoodenLog: 2 | Items must be exact, otherwise you will lose them after placing.";
+		descriptionShort = "Nails: 36 | WoodenLog: 4 | Items must be exact, otherwise you will lose them after placing.";
 		model = "\DZ\gear\camping\wooden_case.p3d";
 		attachments[] =
 		{
 			"Material_L2W2_Nails",
-			"Material_WoodenLogs"
+			"Material_L1_WoodenLogs"
 		};
 	};
 	
@@ -651,8 +651,8 @@ class CfgVehicles
 		model = "\DZ\gear\camping\wooden_case.p3d";
 		attachments[] =
 		{
-			"Material_L2W3_Nails",
-			"Material_L2W3_WoodenPlanks"
+			"Material_L2W2_Nails",
+			"Material_WoodenLogs"
 		};
 	};
 	class BB_SmallShack_Kit: MoreDoorKitBase
@@ -1168,7 +1168,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Wall Fortification";
-		descriptionShort = "A big bastard wall to protect your camp.";
+		descriptionShort = "A wall to protect your camp.";
 		model = "PB_DoorsAndBarricades\data\Fractal\Base_Wall.p3d";
 		attachments[] = {};
 		class GUIInventoryAttachmentsProps{};
