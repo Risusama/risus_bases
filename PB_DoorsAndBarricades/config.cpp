@@ -6,7 +6,7 @@ class CfgPatches
 		{
 			//"PB_PlankDoor_Kit",
 			"PB_WoodDoor_Kit",
-			//"PB_MetalDoor_Kit",
+			"PB_MetalDoor_Kit",
 			//"PB_PlankBarricade_Kit",
 			//"PB_PlankDoorBarricade_Kit",
 			"PB_Well_Kit",
@@ -28,7 +28,7 @@ class CfgPatches
 			////////////////////////////////////////////
 			//"PB_PlankDoor",
 			"PB_WoodDoor",
-			//"PB_MetalDoor",
+			"PB_MetalDoor",
 			//"PB_PlankBarricade",
 			//"PB_MetalBarricade",
 			//"PB_BrickBarricade",
@@ -383,7 +383,7 @@ class CfgVehicles
 			"Material_MetalWire"
 		};
 	};
-	/* Disabled until new models have been made.
+
 	//KIT PORTA DE PLANK - T1
 	class PB_PlankDoor_Kit: MoreDoorKitBase
 	{
@@ -414,7 +414,7 @@ class CfgVehicles
 			"Material_MetalWire"
 		};
 	};
-
+	/* Disabled until new models have been made.
 	//KIT Barricada de Plank - T1
 	class PB_PlankBarricade_Kit: MoreDoorKitBase
 	{
@@ -820,7 +820,7 @@ class CfgVehicles
 			};
 		};
 	};
-
+*/
 	//Porta de Metal T3
 	class PB_MetalDoor: MoreDoorBase
 	{
@@ -841,7 +841,7 @@ class CfgVehicles
 			};
 		};
 	};
-
+	/* Disabled until new models have been made.
 	//Barricada de Madeira T1
 	class PB_PlankBarricade: MoreDoorBase
 	{
