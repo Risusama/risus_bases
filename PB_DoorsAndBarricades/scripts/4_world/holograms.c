@@ -8,7 +8,7 @@ modded class Hologram
 		{
 			return item_in_hands.j_Door();
 		}
-		
+
 		return super.ProjectionBasedOnParent();
 	}
 
@@ -18,7 +18,7 @@ modded class Hologram
 		{
 			return entity_for_placing;
 		}
-		
+
 		return super.PlaceEntity(entity_for_placing);
 	}		
 
@@ -31,7 +31,7 @@ modded class Hologram
 			SetIsColliding(false);
 			return;
 		}
-			
+
 		super.EvaluateCollision();
 	}
 }

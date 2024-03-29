@@ -3,7 +3,7 @@ modded class PluginRecipesManagerBase
 	override void RegisterRecipies()
 	{
 		super.RegisterRecipies();
-		RegisterRecipe(new CraftPlankDoorT1_PB);	
+		RegisterRecipe(new CraftPlankDoorT1_PB);
 		RegisterRecipe(new CraftWoodDoorT2_PB);
 		RegisterRecipe(new CraftMetalDoorT3_PB);
 		RegisterRecipe(new CraftDoorBarricadeT1_PB);
@@ -26,5 +26,5 @@ modded class PluginRecipesManagerBase
 		////////////////////////////////////////////
 	    ///////////////OLDNAGS//////////////////////
 		////////////////////////////////////////////
-	};	
+	};
 }

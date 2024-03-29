@@ -66,9 +66,9 @@ class MoreDoorBase extends Fence
 		//server or single player
 		if ( GetGame().IsServer() )
 		{
-			SetAnimationPhase( "Windown2", 					1 );
-			SetAnimationPhase( "Fechadura", 					1 );
-			SetAnimationPhase( "Wall_Gate_Rotate", 					1 );
+			SetAnimationPhase( "Windown2", 1 );
+			SetAnimationPhase( "Fechadura", 1 );
+			SetAnimationPhase( "Wall_Gate_Rotate", 1 );
 			SetOpenedState( true );
 
 			//regenerate navmesh
@@ -91,13 +91,9 @@ class MoreDoorBase extends Fence
 		//server or single player
 		if ( GetGame().IsServer() )
 		{
-			SetAnimationPhase( "Windown2", 					0 );
-			SetAnimationPhase( "Fechadura", 					0 );
-			SetAnimationPhase( "Wall_Gate_Rotate", 					0 );
-			//
-			
-			//
-
+			SetAnimationPhase( "Windown2", 0 );
+			SetAnimationPhase( "Fechadura", 0 );
+			SetAnimationPhase( "Wall_Gate_Rotate", 0 );
 			SetOpenedState( false );
 
 			//regenerate navmesh
@@ -255,9 +251,6 @@ class PB_PlankBarricade extends MoreDoorBase
 	{
 
 	}
-
-
-
 };
 
 //METAL BARRICADE - T2
@@ -483,9 +476,6 @@ class PB_PlankDoorBarricade extends MoreDoorBase
 	{
 
 	}
-
-
-
 };
 
 //METAL DOOR BARRICADE - T2
@@ -525,7 +515,6 @@ class PB_MetalDoorBarricade extends MoreDoorBase
 		return false;
 	}
 
-
 	override void UpdateAttachmentPhysics( string slot_name, bool is_locked )
 	{
 
@@ -564,7 +553,6 @@ class PB_BrickDoorBarricade extends MoreDoorBase
 	{
 
 	}
-
 };
 
 //Well - Poço de agua
@@ -579,7 +567,7 @@ class PB_Well extends ItemBase
 	{
 		return GetWaterSourceObjectType();
 	}
-	
+
 	override EWaterSourceObjectType GetWaterSourceObjectType()
 	{
 		return EWaterSourceObjectType.WELL;
@@ -594,21 +582,21 @@ class PB_Well extends ItemBase
     {
         return false;
     }
-	
+
 	override bool CanPutInCargo( EntityAI parent )
 	{
         return false;
     }
-	
+
 	override bool CanReceiveItemIntoCargo(EntityAI item)
 	{
         return false;
     }
-	
+
 	override void SetActions()
 	{
 		super.SetActions();
-		
+
 		AddAction(ActionWashHandsWellOne);
 		AddAction(ActionDrinkWellContinuous);
 		AddAction(ActionFillBottleBase);
@@ -660,7 +648,6 @@ class PB_MetalWindow extends MoreDoorBase
 	{
 		return true;
 	}
-
 };
 
 //GATE WOOD - T1
@@ -727,7 +714,7 @@ class PB_SmallMetalPlate extends Inventory_Base
 ////////////////////////////////////////////
 ///////////////OLDNAGS//////////////////////
 ////////////////////////////////////////////
- class BB_BaseWall extends MoreDoorBase
+class BB_BaseWall extends MoreDoorBase
 {
 	override string j_moreDoorKit()
 	{
@@ -748,18 +735,19 @@ class PB_SmallMetalPlate extends Inventory_Base
 		RemoveAction(ActionCloseFence);
 	}
 };
- class BB_SmallShack extends MoreDoorBase
+
+class BB_SmallShack extends MoreDoorBase
 {
 	override string j_moreDoorKit()
 	{
 		return "BB_SmallShack_Kit";
 	}
-	
+
 	override bool AllowDismantle()
 	{
 		return true;
 	}
-	
+
 	override void SetActions()
 	{
 		super.SetActions();
@@ -771,18 +759,19 @@ class PB_SmallMetalPlate extends Inventory_Base
 		RemoveAction(ActionCloseFence);
 	}
 };
+
 class BB_MediumShack extends MoreDoorBase
 {
 	override string j_moreDoorKit()
 	{
 		return "BB_MediumShack_Kit";
 	}
-	
+
 	override bool AllowDismantle()
 	{
 		return true;
 	}
-	
+
 	override void SetActions()
 	{
 		super.SetActions();
@@ -794,18 +783,19 @@ class BB_MediumShack extends MoreDoorBase
 		RemoveAction(ActionCloseFence);
 	}
 };
+
 class BB_LargeShack extends MoreDoorBase
 {
 	override string j_moreDoorKit()
 	{
 		return "BB_LargeShack_Kit";
 	}
-	
+
 	override bool AllowDismantle()
 	{
 		return true;
 	}
-	
+
 	override void SetActions()
 	{
 		super.SetActions();
@@ -817,18 +807,19 @@ class BB_LargeShack extends MoreDoorBase
 		RemoveAction(ActionCloseFence);
 	}
 };
+
 class BB_HugeShack extends MoreDoorBase
 {
 	override string j_moreDoorKit()
 	{
 		return "BB_HugeShack_Kit";
 	}
-	
+
 	override bool AllowDismantle()
 	{
 		return true;
 	}
-	
+
 	override void SetActions()
 	{
 		super.SetActions();
@@ -840,18 +831,19 @@ class BB_HugeShack extends MoreDoorBase
 		RemoveAction(ActionCloseFence);
 	}
 };
+
 class BB_Garage extends MoreDoorBase
 {
 	override string j_moreDoorKit()
 	{
 		return "BB_Garage_Kit";
 	}
-	
+
 	override bool AllowDismantle()
 	{
 		return true;
 	}
-	
+
 	override void SetActions()
 	{
 		super.SetActions();
@@ -863,17 +855,20 @@ class BB_Garage extends MoreDoorBase
 		RemoveAction(ActionCloseFence);
 	}
 };
+
  class BB_WatchTower extends MoreDoorBase
 {
 	override string j_moreDoorKit()
 	{
 		return "BB_WatchTower_Kit";
 	}
+
 	override bool AllowDismantle()
 	{
 		return true;
 	}
-		override void SetActions()
+
+	override void SetActions()
 	{
 		super.SetActions();
 

@@ -7,22 +7,21 @@ class CraftBaseWall_BB extends RecipeBase
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 1;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
-		
-		
+
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//INGREDIENTS
 		//ingredient 1
 		InsertIngredient(0,"WoodenPlank");//you can insert multiple ingredients this way
@@ -32,17 +31,17 @@ class CraftBaseWall_BB extends RecipeBase
 		m_IngredientAddQuantity[0] = -1;// 0 = do nothing
 		m_IngredientDestroy[0] = false;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//ingredient 2
 		InsertIngredient(1,"Hammer");//you can insert multiple ingredients this way
-		
+
 		m_IngredientAddHealth[1] = -10;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = true;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//result1
 		AddResult("BB_BaseWall_Kit");//add results here
 
@@ -79,22 +78,21 @@ class CraftSmallShack_BB extends RecipeBase
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 1;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
-		
-		
+
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
 		
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//INGREDIENTS
 		//ingredient 1
 		InsertIngredient(0,"BB_ToolBox");//you can insert multiple ingredients this way
@@ -104,17 +102,17 @@ class CraftSmallShack_BB extends RecipeBase
 		m_IngredientAddQuantity[0] = -1;// 0 = do nothing
 		m_IngredientDestroy[0] = true;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//ingredient 2
 		InsertIngredient(1,"BB_SmallShackBlueprint");//you can insert multiple ingredients this way
-		
+
 		m_IngredientAddHealth[1] = -10;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = true;// false = do nothing
 		m_IngredientUseSoftSkills[1] = true;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//result1
 		AddResult("BB_SmallShack_Kit");//add results here
 
@@ -151,22 +149,21 @@ class CraftMediumShack_BB extends RecipeBase
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 1;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
-		
-		
+
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//INGREDIENTS
 		//ingredient 1
 		InsertIngredient(0,"BB_ToolBox");//you can insert multiple ingredients this way
@@ -176,7 +173,7 @@ class CraftMediumShack_BB extends RecipeBase
 		m_IngredientAddQuantity[0] = -1;// 0 = do nothing
 		m_IngredientDestroy[0] = true;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//ingredient 2
 		InsertIngredient(1,"BB_MediumShackBlueprint");//you can insert multiple ingredients this way
 		
@@ -186,7 +183,7 @@ class CraftMediumShack_BB extends RecipeBase
 		m_IngredientDestroy[1] = true;// false = do nothing
 		m_IngredientUseSoftSkills[1] = true;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//result1
 		AddResult("BB_MediumShack_Kit");//add results here
 
@@ -224,22 +221,21 @@ class CraftLargeShack_BB extends RecipeBase
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 1;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
-		
-		
+
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//INGREDIENTS
 		//ingredient 1
 		InsertIngredient(0,"BB_ToolBox");//you can insert multiple ingredients this way
@@ -249,17 +245,17 @@ class CraftLargeShack_BB extends RecipeBase
 		m_IngredientAddQuantity[0] = -1;// 0 = do nothing
 		m_IngredientDestroy[0] = true;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//ingredient 2
 		InsertIngredient(1,"BB_LargeShackBlueprint");//you can insert multiple ingredients this way
-		
+
 		m_IngredientAddHealth[1] = -10;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = true;// false = do nothing
 		m_IngredientUseSoftSkills[1] = true;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//result1
 		AddResult("BB_LargeShack_Kit");//add results here
 
@@ -296,22 +292,21 @@ class CraftHugeShack_BB extends RecipeBase
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 1;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
-		
-		
+
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//INGREDIENTS
 		//ingredient 1
 		InsertIngredient(0,"BB_ToolBox");//you can insert multiple ingredients this way
@@ -321,17 +316,17 @@ class CraftHugeShack_BB extends RecipeBase
 		m_IngredientAddQuantity[0] = -1;// 0 = do nothing
 		m_IngredientDestroy[0] = true;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//ingredient 2
 		InsertIngredient(1,"BB_HugeShackBlueprint");//you can insert multiple ingredients this way
-		
+
 		m_IngredientAddHealth[1] = -10;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = true;// false = do nothing
 		m_IngredientUseSoftSkills[1] = true;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//result1
 		AddResult("BB_HugeShack_Kit");//add results here
 
@@ -367,22 +362,21 @@ class CraftWatchTower_BB extends RecipeBase
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 1;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
-		
-		
+
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//INGREDIENTS
 		//ingredient 1
 		InsertIngredient(0,"BB_ToolBox");//you can insert multiple ingredients this way
@@ -392,17 +386,17 @@ class CraftWatchTower_BB extends RecipeBase
 		m_IngredientAddQuantity[0] = -1;// 0 = do nothing
 		m_IngredientDestroy[0] = true;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//ingredient 2
 		InsertIngredient(1,"BB_WatchTowerBlueprint");//you can insert multiple ingredients this way
-		
+
 		m_IngredientAddHealth[1] = -10;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = true;// false = do nothing
 		m_IngredientUseSoftSkills[1] = true;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//result1
 		AddResult("BB_WatchTower_Kit");//add results here
 
@@ -439,22 +433,21 @@ class CraftGarage_BB extends RecipeBase
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 1;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
-		
-		
+
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//INGREDIENTS
 		//ingredient 1
 		InsertIngredient(0,"BB_ToolBox");//you can insert multiple ingredients this way
@@ -464,17 +457,17 @@ class CraftGarage_BB extends RecipeBase
 		m_IngredientAddQuantity[0] = -1;// 0 = do nothing
 		m_IngredientDestroy[0] = true;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//ingredient 2
 		InsertIngredient(1,"BB_GarageBlueprint");//you can insert multiple ingredients this way
-		
+
 		m_IngredientAddHealth[1] = -10;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = true;// false = do nothing
 		m_IngredientUseSoftSkills[1] = true;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//result1
 		AddResult("BB_Garage_Kit");//add results here
 

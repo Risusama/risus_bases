@@ -7,22 +7,21 @@ class CraftPlankWindowBarricadeT1_PB extends RecipeBase
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 1;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
-		
-		
+
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//INGREDIENTS
 		//ingredient 1
 		InsertIngredient(0,"WoodenPlank");//you can insert multiple ingredients this way
@@ -32,17 +31,17 @@ class CraftPlankWindowBarricadeT1_PB extends RecipeBase
 		m_IngredientAddQuantity[0] = -1;// 0 = do nothing
 		m_IngredientDestroy[0] = false;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//ingredient 2
 		InsertIngredient(1,"Hammer");//you can insert multiple ingredients this way
-		
+
 		m_IngredientAddHealth[1] = -10;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = true;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//result1
 		AddResult("PB_PlankBarricade_Kit");//add results here
 
@@ -80,22 +79,21 @@ class CraftDoorBarricadeT1_PB extends RecipeBase
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 1;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
-		
-		
+
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//INGREDIENTS
 		//ingredient 1
 		InsertIngredient(0,"WoodenPlank");//you can insert multiple ingredients this way
@@ -105,17 +103,17 @@ class CraftDoorBarricadeT1_PB extends RecipeBase
 		m_IngredientAddQuantity[0] = -1;// 0 = do nothing
 		m_IngredientDestroy[0] = false;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//ingredient 2
 		InsertIngredient(1,"Hammer");//you can insert multiple ingredients this way
-		
+
 		m_IngredientAddHealth[1] = -10;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = true;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//result1
 		AddResult("PB_PlankDoorBarricade_Kit");//add results here
 
@@ -153,22 +151,21 @@ class CraftWallWoodKitT1_PB extends RecipeBase
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 1;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
-		
-		
+
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//INGREDIENTS
 		//ingredient 1
 		InsertIngredient(0,"WoodenPlank");//you can insert multiple ingredients this way
@@ -178,17 +175,17 @@ class CraftWallWoodKitT1_PB extends RecipeBase
 		m_IngredientAddQuantity[0] = -1;// 0 = do nothing
 		m_IngredientDestroy[0] = false;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//ingredient 2
 		InsertIngredient(1,"Hammer");//you can insert multiple ingredients this way
-		
+
 		m_IngredientAddHealth[1] = -10;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = true;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//result1
 		AddResult("PB_WoodWall_Kit");//add results here
 
@@ -226,22 +223,21 @@ class CraftWellKit_PB extends RecipeBase
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 1;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
-		
-		
+
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//INGREDIENTS
 		//ingredient 1
 		InsertIngredient(0,"WoodenPlank");//you can insert multiple ingredients this way
@@ -251,17 +247,17 @@ class CraftWellKit_PB extends RecipeBase
 		m_IngredientAddQuantity[0] = -1;// 0 = do nothing
 		m_IngredientDestroy[0] = false;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//ingredient 2
 		InsertIngredient(1,"Hammer");//you can insert multiple ingredients this way
-		
+
 		m_IngredientAddHealth[1] = -10;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = true;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//result1
 		AddResult("PB_Well_Kit");//add results here
 
@@ -299,22 +295,21 @@ class CraftWindowPlankT1_PB extends RecipeBase
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 1;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
-		
-		
+
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//INGREDIENTS
 		//ingredient 1
 		InsertIngredient(0,"WoodenPlank");//you can insert multiple ingredients this way
@@ -324,17 +319,17 @@ class CraftWindowPlankT1_PB extends RecipeBase
 		m_IngredientAddQuantity[0] = -1;// 0 = do nothing
 		m_IngredientDestroy[0] = false;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//ingredient 2
 		InsertIngredient(1,"Hammer");//you can insert multiple ingredients this way
-		
+
 		m_IngredientAddHealth[1] = -10;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = true;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//result1
 		AddResult("PB_PlankWindow_Kit");//add results here
 
@@ -363,5 +358,3 @@ class CraftWindowPlankT1_PB extends RecipeBase
 	}
 	
 };
-
-

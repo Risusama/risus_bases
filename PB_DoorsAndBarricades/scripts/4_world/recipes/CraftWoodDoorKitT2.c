@@ -11,13 +11,13 @@ class CraftWoodDoorT2_PB extends RecipeBase
 		//conditions
 		m_MinDamageIngredient[0] = -1;//-1 = disable check
 		m_MaxDamageIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[0] = 6;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
-		
+
 		m_MinDamageIngredient[1] = -1;//-1 = disable check
 		m_MaxDamageIngredient[1] = 3;//-1 = disable check
-		
+
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
 		//----------------------------------------------------------------------------------------------------------------------
@@ -31,17 +31,17 @@ class CraftWoodDoorT2_PB extends RecipeBase
 		m_IngredientAddQuantity[0] = -6;// 0 = do nothing
 		m_IngredientDestroy[0] = false;//true = destroy, false = do nothing
 		m_IngredientUseSoftSkills[0] = false;// set 'true' to allow modification of the values by softskills on this ingredient
-		
+
 		//ingredient 2
 		InsertIngredient(1,"Hammer");//you can insert multiple ingredients this way
-		
+
 		m_IngredientAddHealth[1] = -25;// 0 = do nothing
 		m_IngredientSetHealth[1] = -1; // -1 = do nothing
 		m_IngredientAddQuantity[1] = 0;// 0 = do nothing
 		m_IngredientDestroy[1] = false;// false = do nothing
 		m_IngredientUseSoftSkills[1] = true;// set 'true' to allow modification of the values by softskills on this ingredient
 		//----------------------------------------------------------------------------------------------------------------------
-		
+
 		//result1
 		AddResult("PB_WoodDoor_Kit");//add results here
 
