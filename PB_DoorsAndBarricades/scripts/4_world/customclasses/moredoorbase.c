@@ -570,11 +570,26 @@ class PB_BrickDoorBarricade extends MoreDoorBase
 //Well - Poço de agua
 class PB_Well extends ItemBase
 {
+	override bool IsBuilding()
+	{
+		return false;
+	}
+
 	override bool IsWell()
 	{
-		return true;
+		return GetWaterSourceObjectType();
 	}
 	
+	override EWaterSourceObjectType GetWaterSourceObjectType()
+	{
+		return EWaterSourceObjectType.WELL;
+	}
+
+	override float GetLiquidThroughputCoef()
+	{
+		return LIQUID_THROUGHPUT_WELL;
+	}
+
 	override bool CanPutIntoHands(EntityAI parent)
     {
         return false;
@@ -596,6 +611,7 @@ class PB_Well extends ItemBase
 		
 		AddAction(ActionWashHandsWellOne);
 		AddAction(ActionDrinkWellContinuous);
+		AddAction(ActionFillBottleBase);
 	}
 };
 
