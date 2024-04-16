@@ -4,7 +4,7 @@ class CfgPatches
 	{
 		units[]=
 		{
-			//"PB_PlankDoor_Kit",
+			"PB_PlankDoor_Kit",
 			"PB_WoodDoor_Kit",
 			"PB_MetalDoor_Kit",
 			//"PB_PlankBarricade_Kit",
@@ -26,7 +26,7 @@ class CfgPatches
 			////////////////////////////////////////////
 			///////////////OLDNAGS//////////////////////
 			////////////////////////////////////////////
-			//"PB_PlankDoor",
+			"PB_PlankDoor",
 			"PB_WoodDoor",
 			"PB_MetalDoor",
 			//"PB_PlankBarricade",
@@ -794,7 +794,6 @@ class CfgVehicles
 		};
 	};
 	
-	/* Disabled until new models have been made.
 	class PB_PlankDoor: MoreDoorBase
 	{
 		scope = 2;
@@ -820,7 +819,7 @@ class CfgVehicles
 			};
 		};
 	};
-*/
+
 	//Porta de Metal T3
 	class PB_MetalDoor: MoreDoorBase
 	{
