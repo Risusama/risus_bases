@@ -7,7 +7,7 @@ class CfgPatches
 			"PB_PlankDoor_Kit",
 			"PB_WoodDoor_Kit",
 			"PB_MetalDoor_Kit",
-			//"PB_PlankBarricade_Kit",
+			"PB_PlankBarricade_Kit",
 			//"PB_PlankDoorBarricade_Kit",
 			"PB_Well_Kit",
 			//"PB_PlankWindow_Kit",
@@ -29,7 +29,7 @@ class CfgPatches
 			"PB_PlankDoor",
 			"PB_WoodDoor",
 			"PB_MetalDoor",
-			//"PB_PlankBarricade",
+			"PB_PlankBarricade",
 			//"PB_MetalBarricade",
 			//"PB_BrickBarricade",
 			//"PB_PlankDoorBarricade",
@@ -414,7 +414,7 @@ class CfgVehicles
 			"Material_MetalWire"
 		};
 	};
-	/* Disabled until new models have been made.
+
 	//KIT Barricada de Plank - T1
 	class PB_PlankBarricade_Kit: MoreDoorKitBase
 	{
@@ -428,7 +428,7 @@ class CfgVehicles
 			"Material_L2W2_WoodenPlanks"
 		};
 	};
-*/
+
 	//kit Wall - Kit Parede de Madeira - T1
 	class PB_WoodWall_Kit: MoreDoorKitBase
 	{
@@ -840,14 +840,14 @@ class CfgVehicles
 			};
 		};
 	};
-	/* Disabled until new models have been made.
+
 	//Barricada de Madeira T1
 	class PB_PlankBarricade: MoreDoorBase
 	{
 		scope = 2;
 		displayName = "Plank Barricade | T1 |";
 		descriptionShort = "Just A Barricade, you must be bored if your bothering to read the description on some door...";
-		model = "PB_DoorsAndBarricades\data\Wood\WoodBarricade.p3d";
+		model = "PB_DoorsAndBarricades\data\Wood\PlankBarricade.p3d";
 		attachments[] = {"MetalSheets1"};
 		class GUIInventoryAttachmentsProps
 		{
@@ -861,7 +861,7 @@ class CfgVehicles
 			};
 		};
 	};
-
+	/* Disabled until new models have been made.
 	//Barricada de Metal T2
 	class PB_MetalBarricade: MoreDoorBase
 	{
