@@ -71,6 +71,7 @@ class CraftPlankWindowBarricadeT1_PB extends RecipeBase
 };
 
 //DOOR BARRICADE
+/* DISABLED FOR NOW
 class CraftDoorBarricadeT1_PB extends RecipeBase
 {
 	override void Init()
@@ -141,7 +142,7 @@ class CraftDoorBarricadeT1_PB extends RecipeBase
 		Debug.Log("Recipe Do method called","recipes");
 	}
 };
-
+*/
 //WALL KIT
 class CraftWallWoodKitT1_PB extends RecipeBase
 {

@@ -848,9 +848,10 @@ class CfgVehicles
 		displayName = "Plank Barricade | T1 |";
 		descriptionShort = "Just A Barricade, you must be bored if your bothering to read the description on some door...";
 		model = "PB_DoorsAndBarricades\data\Wood\PlankBarricade.p3d";
-		attachments[] = {"MetalSheets1"};
+		//attachments[] = {"MetalSheets1"};
 		class GUIInventoryAttachmentsProps
 		{
+			/*
 			class Base
 			{
 				name = "Upgrade";
@@ -859,6 +860,7 @@ class CfgVehicles
 				icon = "cat_bb_material";
 				selection = "wall";
 			};
+			*/
 		};
 	};
 	/* Disabled until new models have been made.
