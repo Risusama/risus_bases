@@ -903,9 +903,10 @@ class CfgVehicles
 		displayName = "Wood Wall | T1 |";
 		descriptionShort = "Just A Wall, you must be bored if your bothering to read the description on some door...";
 		model = "PB_DoorsAndBarricades\data\Wood\WoodWall.p3d";
-		attachments[] = {"MetalSheets4"};
+		//attachments[] = {"MetalSheets4"};
 		class GUIInventoryAttachmentsProps
 		{
+			/*
 			class Base
 			{
 				name = "Upgrade";
@@ -914,6 +915,7 @@ class CfgVehicles
 				icon = "cat_bb_material";
 				selection = "wall";
 			};
+			*/
 		};
 	};
 
