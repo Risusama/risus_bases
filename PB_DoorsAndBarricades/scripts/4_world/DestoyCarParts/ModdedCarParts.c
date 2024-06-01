@@ -183,8 +183,7 @@ class ActionDestroyParts: ActionContinuousBase
 	bool HasDestroyCarPartsTools(ItemBase item_in_hands)
 	{
 		ref TStringArray j_DestroyCarParts = g_Game.GetPBConfig().Get_DestroyCarPartsTools();
-
-		foreach (string tool : j_DestroyCarParts) 
+		foreach (string tool : j_DestroyCarParts)
 		{
 			if ( item_in_hands && item_in_hands.IsKindOf(tool) )
 			{
@@ -208,5 +207,4 @@ class ActionDestroyParts: ActionContinuousBase
 			};
 		};
 	}
-
 }
