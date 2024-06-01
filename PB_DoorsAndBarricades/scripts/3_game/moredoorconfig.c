@@ -122,7 +122,7 @@ class PBConfig
 	{
 		return CanCraftBarricadesKits;
 	}
-	
+
 	bool Get_CanCraftShackKits()
 	{
 		return CanCraftShackKits;
