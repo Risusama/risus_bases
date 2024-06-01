@@ -14,31 +14,31 @@ class MoreDoorKitBase extends ItemBase
 
 	string slotPlanks10 = "Material_L2W2_WoodenPlanks";
 	string slotPlanks20 = "Material_L2W3_WoodenPlanks";
-	
+
 	////////////////////////////////////////////
 	///////////////OLDNAGS//////////////////////
 	////////////////////////////////////////////
-	
+
 	string slotPlanks20_2 = "Material_L3W1_WoodenPlanks";
 	string slotPlanks20_3 = "Material_L3W2_WoodenPlanks";
 	string slotPlanks20_4 = "Material_L3W3_WoodenPlanks";
-	
+
 	string slotNails99_1 = "Material_L3W1_Nails";
 	string slotNails99_2 = "Material_L3W2_Nails";
 	string slotNails99_3 = "Material_L3W3_Nails";
-	
+
 	string slotMetalSheets5 = "Material_L3W1_MetalSheets";
 	string slotMetalSheets10 = "Material_L2W1_MetalSheets";
 	string slotMetalSheets20 = "Material_L2W2_MetalSheets";
-	
+
 	////////////////////////////////////////////
 	///////////////OLDNAGS//////////////////////
 	////////////////////////////////////////////
-	
+
 	string slotNails20 = "Material_L2W1_Nails";
 	string slotNails36 = "Material_L2W2_Nails";
 	string slotNails75 = "Material_L2W3_Nails";
-	
+
 	string slotMetal4 = "MetalSheets1";
 	string slotMetal8 = "MetalSheets2";
 	string slotMetal16 = "MetalSheets3";
@@ -70,7 +70,7 @@ class MoreDoorKitBase extends ItemBase
 	ItemBase slotCast9;
 	ItemBase slotCast10;
 	ItemBase slotCast11;
-	/////////////////////////////////////////////						
+	/////////////////////////////////////////////
 
 	int plankCost;
 	int plankCost2;
@@ -185,11 +185,10 @@ class MoreDoorKitBase extends ItemBase
 			moreDoorKit.SetPosition(position);
 			moreDoorKit.SetOrientation(orientation);
 		}
-
 		SetIsDeploySound( true );
 		SetLifetime(3888000);
 	}
-	
+
 	override bool IsBasebuildingKit()
 	{
 		return true;
@@ -693,10 +692,10 @@ class BB_BaseWall_Kit extends MoreDoorKitBase
 
 		slot_id = InventorySlots.GetSlotIdFromString(slotNails36);
 		slot_id2 = InventorySlots.GetSlotIdFromString(slotLogs);
-		
+
 		slotCast = ItemBase.Cast( GetInventory().FindAttachment(slot_id) );
 		slotCast2 = ItemBase.Cast( GetInventory().FindAttachment(slot_id2) );
-		
+
 		j_Count = slotCast.GetQuantity();
 		j_Count2 = slotCast2.GetQuantity();
 
@@ -736,7 +735,6 @@ class BB_SmallShack_Kit extends MoreDoorKitBase
 		metalCost = 4;
 		plankCost = 20;
 		plankCost2 = 20;
-
 
 		slot_id = InventorySlots.GetSlotIdFromString(slotNails99_1);
 		slot_id2 = InventorySlots.GetSlotIdFromString(slotMetalSheets5);
@@ -800,7 +798,6 @@ class BB_MediumShack_Kit extends MoreDoorKitBase
 		plankCost = 20;
 		plankCost2 = 20;
 		plankCost3 = 10;
-
 
 		slot_id = InventorySlots.GetSlotIdFromString(slotNails99_1);
 		slot_id2 = InventorySlots.GetSlotIdFromString(slotNails75);
@@ -875,7 +872,6 @@ class BB_LargeShack_Kit extends MoreDoorKitBase
 		plankCost = 20;
 		plankCost2 = 20;
 		plankCost3 = 20;
-
 
 		slot_id = InventorySlots.GetSlotIdFromString(slotNails99_1);
 		slot_id2 = InventorySlots.GetSlotIdFromString(slotNails99_2);
@@ -957,7 +953,6 @@ class BB_HugeShack_Kit extends MoreDoorKitBase
 		plankCost2 = 20;
 		plankCost3 = 20;
 		plankCost4 = 10;
-
 
 		slot_id = InventorySlots.GetSlotIdFromString(slotNails99_1);
 		slot_id2 = InventorySlots.GetSlotIdFromString(slotNails99_2);
@@ -1050,7 +1045,6 @@ class BB_WatchTower_Kit extends MoreDoorKitBase
 		plankCost3 = 20;
 		plankCost4 = 10;
 
-
 		slot_id = InventorySlots.GetSlotIdFromString(slotNails99_1);
 		slot_id2 = InventorySlots.GetSlotIdFromString(slotNails99_2);
 		slot_id3 = InventorySlots.GetSlotIdFromString(slotNails99_3);
@@ -1139,7 +1133,6 @@ class BB_Garage_Kit extends MoreDoorKitBase
 		plankCost = 20;
 		plankCost2 = 20;
 		plankCost3 = 20;
-
 
 		slot_id = InventorySlots.GetSlotIdFromString(slotNails99_1);
 		slot_id2 = InventorySlots.GetSlotIdFromString(slotNails99_2);
