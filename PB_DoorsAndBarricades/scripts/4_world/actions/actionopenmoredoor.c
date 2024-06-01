@@ -7,7 +7,7 @@ class ActionOpenMoreDoor: ActionInteractBase
 		m_HUDCursorIcon = CursorIcons.OpenDoors;
 	}
 
-	override void CreateConditionComponents()  
+	override void CreateConditionComponents()
 	{
 		m_ConditionItem = new CCINone;
 		m_ConditionTarget = new CCTObject(UAMaxDistances.DEFAULT);
@@ -24,16 +24,14 @@ class ActionOpenMoreDoor: ActionInteractBase
 		if ( targetObject && targetObject.CanUseConstruction() )
 		{
 			MoreDoorBase fence = MoreDoorBase.Cast( targetObject );
-			
 			if ( fence && fence.CanOpenFence() )
 			{
 				return true;
 			}
 		}
-		
 		return false;
 	}
-	
+
 	override void OnStartServer( ActionData action_data )
 	{
 		MoreDoorBase fence = MoreDoorBase.Cast( action_data.m_Target.GetObject() );

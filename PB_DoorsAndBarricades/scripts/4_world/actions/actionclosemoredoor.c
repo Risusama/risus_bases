@@ -7,7 +7,7 @@ class ActionCloseMoreDoor: ActionInteractBase
 		m_HUDCursorIcon = CursorIcons.CloseDoors;
 	}
 
-	override void CreateConditionComponents()  
+	override void CreateConditionComponents()
 	{
 		m_ConditionItem = new CCINone;
 		m_ConditionTarget = new CCTObject(UAMaxDistances.DEFAULT);
@@ -24,7 +24,6 @@ class ActionCloseMoreDoor: ActionInteractBase
 		if ( targetObject && targetObject.CanUseConstruction() )
 		{
 			MoreDoorBase fence = MoreDoorBase.Cast( targetObject );
-			
 			if ( fence && fence.CanCloseFence() )
 			{
 				return true;

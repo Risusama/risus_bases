@@ -15,24 +15,23 @@ class ActionDestroyT1eT2: ActionContinuousBase
 		m_CallbackClass = ActionDestroyMoreDoorCB;
 		m_CommandUID = DayZPlayerConstants.CMD_ACTIONFB_DISASSEMBLE;
 		m_FullBody = true;
-		m_StanceMask = DayZPlayerConstants.STANCEMASK_ERECT;		
-		
+		m_StanceMask = DayZPlayerConstants.STANCEMASK_ERECT;
 		m_SpecialtyWeight = UASoftSkillsWeight.ROUGH_HIGH;
 	}
-	
-	override void CreateConditionComponents()  
-	{	
+
+	override void CreateConditionComponents()
+	{
 		m_ConditionItem = new CCINonRuined;
 		m_ConditionTarget = new CCTNonRuined( UAMaxDistances.DEFAULT );
 	}
-		
+
 	override string GetText()
 	{
 		return "Destroy";
 	}
 
 	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
-	{	
+	{
 		Object target_object = target.GetObject();
 		MoreDoorBase base_building = MoreDoorBase.Cast( target_object );
 		if ( base_building )
@@ -46,7 +45,6 @@ class ActionDestroyT1eT2: ActionContinuousBase
 				}
 			}
 		}
-        
 		return false;
 	}
 
@@ -54,7 +52,7 @@ class ActionDestroyT1eT2: ActionContinuousBase
 	{
 		ref TStringArray j_raidingTools = g_Game.GetPBConfig().Get_RaidToolsT1eT2();
 
-		foreach (string tool : j_raidingTools) 
+		foreach (string tool : j_raidingTools)
 		{
 			if ( item_in_hands && item_in_hands.IsKindOf(tool) )
 			{
@@ -68,14 +66,14 @@ class ActionDestroyT1eT2: ActionContinuousBase
 	{
 		return g_Game.GetPBConfig().Get_CanDestroyMoreDoor();
 	}
-	
+
 	override bool ActionConditionContinue( ActionData action_data )
-	{	
+	{
 		return DestroyCondition( action_data.m_Player, action_data.m_Target, action_data.m_MainItem , false );
-	}	
-	
+	}
+
 	override void OnFinishProgressServer( ActionData action_data )
-	{	
+	{
 		MoreDoorBase base_building = MoreDoorBase.Cast( action_data.m_Target.GetObject() );
 		int damageToTool = g_Game.GetPBConfig().Get_MoreDoorToolDamage();
 
@@ -83,9 +81,9 @@ class ActionDestroyT1eT2: ActionContinuousBase
 
 		action_data.m_MainItem.DecreaseHealth( damageToTool, false );
 	}
-	
+
 	protected bool DestroyCondition( PlayerBase player, ActionTarget target, ItemBase item, bool camera_check )
-	{	
+	{
 		if ( player && !player.IsLeaning() )
 		{
 			Object target_object = target.GetObject();
@@ -114,13 +112,13 @@ class ActionDestroyT1eT2: ActionContinuousBase
 							}
 						}
 					}
-					return true;				
+					return true;
 				}
 			}
 		}
 		return false;
 	}
-	
+
 	override string GetAdminLogMessage(ActionData action_data)
 	{
 		return " destroyed " + action_data.m_Target.GetObject().GetDisplayName() + " with " + action_data.m_MainItem.GetDisplayName();
@@ -136,24 +134,23 @@ class ActionDestroyT3: ActionContinuousBase
 		m_CallbackClass = ActionDestroyMoreDoorCB;
 		m_CommandUID = DayZPlayerConstants.CMD_ACTIONFB_DISASSEMBLE;
 		m_FullBody = true;
-		m_StanceMask = DayZPlayerConstants.STANCEMASK_ERECT;		
-		
+		m_StanceMask = DayZPlayerConstants.STANCEMASK_ERECT;
 		m_SpecialtyWeight = UASoftSkillsWeight.ROUGH_HIGH;
 	}
-	
-	override void CreateConditionComponents()  
-	{	
+
+	override void CreateConditionComponents()
+	{
 		m_ConditionItem = new CCINonRuined;
 		m_ConditionTarget = new CCTNonRuined( UAMaxDistances.DEFAULT );
 	}
-		
+
 	override string GetText()
 	{
 		return "Destroy";
 	}
 
 	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
-	{	
+	{
 		Object target_object = target.GetObject();
 		MoreDoorBase base_building = MoreDoorBase.Cast( target_object );
 		if ( base_building )
@@ -167,7 +164,6 @@ class ActionDestroyT3: ActionContinuousBase
 				}
 			}
 		}
-        
 		return false;
 	}
 
@@ -175,7 +171,7 @@ class ActionDestroyT3: ActionContinuousBase
 	{
 		ref TStringArray j_raidingTools = g_Game.GetPBConfig().Get_RaidToolsT3();
 
-		foreach (string tool : j_raidingTools) 
+		foreach (string tool : j_raidingTools)
 		{
 			if ( item_in_hands && item_in_hands.IsKindOf(tool) )
 			{
@@ -189,14 +185,14 @@ class ActionDestroyT3: ActionContinuousBase
 	{
 		return g_Game.GetPBConfig().Get_CanDestroyMoreDoor();
 	}
-	
+
 	override bool ActionConditionContinue( ActionData action_data )
-	{	
+	{
 		return DestroyCondition( action_data.m_Player, action_data.m_Target, action_data.m_MainItem , false );
-	}	
-	
+	}
+
 	override void OnFinishProgressServer( ActionData action_data )
-	{	
+	{
 		MoreDoorBase base_building = MoreDoorBase.Cast( action_data.m_Target.GetObject() );
 		int damageToTool = g_Game.GetPBConfig().Get_MoreDoorToolDamage();
 
@@ -204,9 +200,9 @@ class ActionDestroyT3: ActionContinuousBase
 
 		action_data.m_MainItem.DecreaseHealth( damageToTool, false );
 	}
-	
+
 	protected bool DestroyCondition( PlayerBase player, ActionTarget target, ItemBase item, bool camera_check )
-	{	
+	{
 		if ( player && !player.IsLeaning() )
 		{
 			Object target_object = target.GetObject();
@@ -235,13 +231,13 @@ class ActionDestroyT3: ActionContinuousBase
 							}
 						}
 					}
-					return true;				
+					return true;
 				}
 			}
 		}
 		return false;
 	}
-	
+
 	override string GetAdminLogMessage(ActionData action_data)
 	{
 		return " destroyed " + action_data.m_Target.GetObject().GetDisplayName() + " with " + action_data.m_MainItem.GetDisplayName();

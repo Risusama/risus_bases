@@ -5,7 +5,6 @@ class ActionDismantleMoreDoorCB : ActionContinuousBaseCB
 	override void CreateActionComponent()
 	{
 		dismantleTime = g_Game.GetPBConfig().Get_MoreDoorDismantleTime();
-		
 		m_ActionData.m_ActionComponent = new CAContinuousTime( dismantleTime );
 	}
 };
@@ -17,24 +16,23 @@ class ActionDismantleMoreDoor: ActionContinuousBase
 		m_CallbackClass = ActionDismantleMoreDoorCB;
 		m_CommandUID = DayZPlayerConstants.CMD_ACTIONFB_DISASSEMBLE;
 		m_FullBody = true;
-		m_StanceMask = DayZPlayerConstants.STANCEMASK_ERECT;	
-		
+		m_StanceMask = DayZPlayerConstants.STANCEMASK_ERECT;
 		m_SpecialtyWeight = UASoftSkillsWeight.ROUGH_HIGH;
 	}
-	
-	override void CreateConditionComponents()  
-	{	
+
+	override void CreateConditionComponents()
+	{
 		m_ConditionItem = new CCINonRuined;
 		m_ConditionTarget = new CCTNonRuined( UAMaxDistances.DEFAULT );
 	}
-		
+
 	override string GetText()
 	{
 		return "Dismantle";
 	}
 
 	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
-	{	
+	{
 		Object target_object = target.GetObject();
 		MoreDoorBase base_building = MoreDoorBase.Cast( target_object );
 
@@ -44,14 +42,14 @@ class ActionDismantleMoreDoor: ActionContinuousBase
 		}
 		return false;
 	}
-	
+
 	override bool ActionConditionContinue( ActionData action_data )
-	{	
+	{
 		return DismantleCondition( action_data.m_Player, action_data.m_Target, action_data.m_MainItem , false );
-	}	
-	
+	}
+
 	override void OnFinishProgressServer( ActionData action_data )
-	{	
+	{
 		vector position = action_data.m_Player.GetPosition();
 		MoreDoorBase base_building = MoreDoorBase.Cast( action_data.m_Target.GetObject() );
 
@@ -59,23 +57,21 @@ class ActionDismantleMoreDoor: ActionContinuousBase
 		ItemBase j_door = ItemBase.Cast(GetGame().CreateObject(base_building.j_moreDoorKit(), position, false ));
 		MoreDoorKitBase returnGoods = MoreDoorKitBase.Cast( j_door );
 		returnGoods.ReturnGoodsFromDismantle();
-		
 		//add damage to tool
 		action_data.m_MainItem.DecreaseHealth( UADamageApplied.DISMANTLE, false );
 	}
-		
+
 	//setup
 	override bool SetupAction( PlayerBase player, ActionTarget target, ItemBase item, out ActionData action_data, Param extra_data = NULL )
-	{	
+	{
 		if( super.SetupAction( player, target, item, action_data, extra_data ) )
 		{
 			SetBuildingAnimation( item );
-			
 			return true;
 		}
 		return false;
 	}
-	
+
 	protected void SetBuildingAnimation( ItemBase item )
 	{
 		switch( item.Type() )
@@ -86,15 +82,15 @@ class ActionDismantleMoreDoor: ActionContinuousBase
 				break;
 			case Pliers:
 				m_CommandUID = DayZPlayerConstants.CMD_ACTIONFB_INTERACT;
-				break;				
+				break;
 			default:
 				m_CommandUID = DayZPlayerConstants.CMD_ACTIONFB_DISASSEMBLE;
 				break;
 		}
-	}	
-	
+	}
+
 	protected bool DismantleCondition( PlayerBase player, ActionTarget target, ItemBase item, bool camera_check )
-	{	
+	{
 		if ( player && !player.IsLeaning() )
 		{
 			Object target_object = target.GetObject();
@@ -102,7 +98,6 @@ class ActionDismantleMoreDoor: ActionContinuousBase
 			if ( base_building )
 			{
 				string part_name = target_object.GetActionComponentName( target.GetComponentIndex() );
-				
 				//camera and position checks
 				if ( !base_building.IsFacingPlayer( player, part_name) && !player.GetInputController().CameraIsFreeLook() && base_building.HasProperDistance( part_name, player ) )
 				{
@@ -118,13 +113,12 @@ class ActionDismantleMoreDoor: ActionContinuousBase
 						}
 					}
 					return true;
-				}	
+				}
 			}
 		}
-
 		return false;
 	}
-	
+
 	override string GetAdminLogMessage(ActionData action_data)
 	{
 		return " dismantled " + action_data.m_Target.GetObject().GetDisplayName() + " with " + action_data.m_MainItem.GetDisplayName();
@@ -148,24 +142,23 @@ class ActionDismantleWell: ActionContinuousBase
 		m_CallbackClass = ActionDismantleWellCB;
 		m_CommandUID = DayZPlayerConstants.CMD_ACTIONFB_DIGMANIPULATE;
 		m_FullBody = true;
-		m_StanceMask = DayZPlayerConstants.STANCEMASK_ERECT;		
-		
+		m_StanceMask = DayZPlayerConstants.STANCEMASK_ERECT;
 		m_SpecialtyWeight = UASoftSkillsWeight.ROUGH_HIGH;
 	}
-	
-	override void CreateConditionComponents()  
-	{	
+
+	override void CreateConditionComponents()
+	{
 		m_ConditionItem = new CCINonRuined;
 		m_ConditionTarget = new CCTNonRuined( UAMaxDistances.DEFAULT );
 	}
-		
+
 	override string GetText()
 	{
 		return "Dismantle";
 	}
 
 	override bool ActionCondition( PlayerBase player, ActionTarget target, ItemBase item )
-	{	
+	{
 		Object target_object = target.GetObject();
 		PB_Well m_Well = PB_Well.Cast( target_object );
 		if ( target_object )
@@ -174,14 +167,12 @@ class ActionDismantleWell: ActionContinuousBase
 			{
 				return true;
 			}
-
 		}
-        
 		return false;
 	}
-	
+
 	override void OnFinishProgressServer( ActionData action_data )
-	{	
+	{
 		Object target_object = action_data.m_Target.GetObject();
 		PB_Well m_Well = PB_Well.Cast( target_object );
 
@@ -210,5 +201,4 @@ class ActionDismantleWell: ActionContinuousBase
 
 		action_data.m_MainItem.DecreaseHealth( damageToTool, false );
 	}
-	
 };
