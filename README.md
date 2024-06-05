@@ -23,6 +23,5 @@
  - Jest & MDC for the original More Doors addon on Steam Workshop (https://steamcommunity.com/sharedfiles/filedetails/?id=2007175894)
  - Dinho & Morette for the "Doors and Barricades - ProjectBR" addon on Steam Workshop (https://steamcommunity.com/workshop/filedetails/?id=2592742479)
  - Oldnag for the "Oldnags_bases" addon, which is based on the ones above (https://steamcommunity.com/sharedfiles/filedetails/?id=2843035949)
- - Flukier Jupiter for the Well model (https://free3d.com/user/flukierjupiter, https://free3d.com/3d-model/well-73755.html)
+ - [Flukier Jupiter](https://free3d.com/user/flukierjupiter) for the Well model which is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/deed) (https://free3d.com/3d-model/well-73755.html, https://sketchfab.com/3d-models/well-d8442bc92f224f0ebfa8446a1bca836d)
  - My friend Kingtaffi for helping make new models and giving advice.
-
