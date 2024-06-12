@@ -71,12 +71,11 @@ class CraftPlankWindowBarricadeT1_PB extends RecipeBase
 };
 
 //DOOR BARRICADE
-/* DISABLED FOR NOW
 class CraftDoorBarricadeT1_PB extends RecipeBase
 {
 	override void Init()
 	{
-		m_Name = "Craft Door Barricade Kit";
+		m_Name = "Craft Plank Door Barricade Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 1;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
@@ -142,7 +141,7 @@ class CraftDoorBarricadeT1_PB extends RecipeBase
 		Debug.Log("Recipe Do method called","recipes");
 	}
 };
-*/
+
 //WALL KIT
 class CraftWallWoodKitT1_PB extends RecipeBase
 {

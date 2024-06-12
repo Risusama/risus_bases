@@ -8,7 +8,7 @@ class CfgPatches
 			"PB_WoodDoor_Kit",
 			"PB_MetalDoor_Kit",
 			"PB_PlankBarricade_Kit",
-			//"PB_PlankDoorBarricade_Kit",
+			"PB_PlankDoorBarricade_Kit",
 			"PB_Well_Kit",
 			//"PB_PlankWindow_Kit",
 			//"PB_WoodGate_Kit",
@@ -32,7 +32,7 @@ class CfgPatches
 			"PB_PlankBarricade",
 			//"PB_MetalBarricade",
 			//"PB_BrickBarricade",
-			//"PB_PlankDoorBarricade",
+			"PB_PlankDoorBarricade",
 			//"PB_MetalDoorBarricade",
 			//"PB_BrickDoorBarricade",
 			"PB_Well",
@@ -444,7 +444,6 @@ class CfgVehicles
 	};
 	
 	//Plank Door Barricade Kit - T1
-	/* Disabled until new models have been made.
 	class PB_PlankDoorBarricade_Kit: MoreDoorKitBase
 	{
 		scope = 2;
@@ -457,7 +456,6 @@ class CfgVehicles
 			"Material_L2W2_WoodenPlanks"
 		};
 	};
-	*/
 
 	//Well Kit
 	class PB_Well_Kit: MoreDoorKitBase
@@ -529,6 +527,7 @@ class CfgVehicles
 			};
 		};
 	};
+
 	class BB_MediumShackBlueprint: Inventory_Base
 	{
 		scope = 2;
@@ -548,6 +547,7 @@ class CfgVehicles
 			};
 		};
 	};
+
 	class BB_LargeShackBlueprint: Inventory_Base
 	{
 		scope = 2;
@@ -567,6 +567,7 @@ class CfgVehicles
 			};
 		};
 	};
+
 	class BB_HugeShackBlueprint: Inventory_Base
 	{
 		scope = 2;
@@ -586,6 +587,7 @@ class CfgVehicles
 			};
 		};
 	};
+
 	class BB_WatchTowerBlueprint: Inventory_Base
 	{
 		scope = 2;
@@ -605,6 +607,7 @@ class CfgVehicles
 			};
 		};
 	};
+
 	class BB_GarageBlueprint: Inventory_Base
 	{
 		scope = 2;
@@ -624,6 +627,7 @@ class CfgVehicles
 			};
 		};
 	};
+
 	class BB_ToolBox: Inventory_Base
 	{
 		scope = 2;
@@ -643,6 +647,7 @@ class CfgVehicles
 			};
 		};
 	};
+
 	class BB_BaseWall_Kit: MoreDoorKitBase
 	{
 		scope = 2;
@@ -655,6 +660,7 @@ class CfgVehicles
 			"Material_WoodenLogs"
 		};
 	};
+
 	class BB_SmallShack_Kit: MoreDoorKitBase
 	{
 		scope = 2;
@@ -670,6 +676,7 @@ class CfgVehicles
 			"Material_L3W2_WoodenPlanks"
 		};
 	};
+
 	class BB_MediumShack_Kit: MoreDoorKitBase
 	{
 		scope = 2;
@@ -686,6 +693,7 @@ class CfgVehicles
 			"Material_L3W2_WoodenPlanks",
 		};
 	};
+
 	class BB_LargeShack_Kit: MoreDoorKitBase
 	{
 		scope = 2;
@@ -704,6 +712,7 @@ class CfgVehicles
 			"Material_L3W3_WoodenPlanks"
 		};
 	};
+
 	class BB_HugeShack_Kit: MoreDoorKitBase
 	{
 		scope = 2;
@@ -724,6 +733,7 @@ class CfgVehicles
 			"Material_L2W2_WoodenPlanks"
 		};
 	};
+
 	class BB_WatchTower_Kit: MoreDoorKitBase
 	{
 		scope = 2;
@@ -744,6 +754,7 @@ class CfgVehicles
 			"Material_L2W2_WoodenPlanks"
 		};
 	};
+
 	class BB_Garage_Kit: MoreDoorKitBase
 	{
 		scope = 2;
@@ -767,7 +778,6 @@ class CfgVehicles
 	////////////////////////////////////////////
 
 	//Wood Door T2
-
 	class PB_WoodDoor: MoreDoorBase
 	{
 		scope = 2;
@@ -943,17 +953,17 @@ class CfgVehicles
 		};
 	};
 */
-	//Wood Door Barricade - T1
-	/* Disabled until new models have been made.
+	//Plank Door Barricade - T1
 	class PB_PlankDoorBarricade: MoreDoorBase
 	{
 		scope = 2;
 		displayName = "Plank Door Barricade | T1 |";
 		descriptionShort = "Just A Barricade, you must be bored if your bothering to read the description on some door...";
-		model = "PB_DoorsAndBarricades\data\Wood\WoodDoorBarricade.p3d";
+		model = "PB_DoorsAndBarricades\data\Wood\PlankDoorBarricade.p3d";
 		attachments[] = {"MetalSheets2"};
 		class GUIInventoryAttachmentsProps
 		{
+			/*
 			class Base
 			{
 				name = "Upgrade";
@@ -962,9 +972,11 @@ class CfgVehicles
 				icon = "cat_bb_material";
 				selection = "wall";
 			};
+			*/
 		};
 	};
 
+	/* Disabled until new models have been made.
 	//Metal Door Barricade - T2
 	class PB_MetalDoorBarricade: MoreDoorBase
 	{
@@ -997,7 +1009,7 @@ class CfgVehicles
 		class GUIInventoryAttachmentsProps{};
 	};
 	*/
-	//Well - Poço
+	//Well
 	class PB_Well: Inventory_Base
 	{
 		scope = 2;
