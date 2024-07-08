@@ -10,7 +10,7 @@ class CfgPatches
 			"PB_PlankBarricade_Kit",
 			"PB_PlankDoorBarricade_Kit",
 			"PB_Well_Kit",
-			//"PB_PlankWindow_Kit",
+			"PB_PlankWindow_Kit",
 			//"PB_WoodGate_Kit",
 			"PB_WoodWall_Kit",
 			////////////////////////////////////////////
@@ -36,8 +36,8 @@ class CfgPatches
 			//"PB_MetalDoorBarricade",
 			//"PB_BrickDoorBarricade",
 			"PB_Well",
-			//"PB_PlankWindow",
-			//"PB_MetalWindow",
+			"PB_PlankWindow",
+			"PB_MetalWindow",
 			//"PB_WoodGate",
 			//"PB_MetalGate",
 			"PB_WoodWall",
@@ -489,8 +489,8 @@ class CfgVehicles
 			"Material_WoodenPlanks"
 		};
 	};
-
-	//Plank Windows Kit - T1
+	*/
+	//Plank Window Kit - T1
 	class PB_PlankWindow_Kit: MoreDoorKitBase
 	{
 		scope = 2;
@@ -504,7 +504,7 @@ class CfgVehicles
 			"Material_MetalWire"
 		};
 	};
-	*/
+
 	////////////////////////////////////////////
 	///////////////OLDNAGS//////////////////////
 	////////////////////////////////////////////
@@ -1066,7 +1066,7 @@ class CfgVehicles
 	};
 
 	//Plank Window - T1
-	/* Disabled until new models have been made.
+
 	class PB_PlankWindow: MoreDoorBase
 	{
 		scope = 2;
@@ -1120,7 +1120,7 @@ class CfgVehicles
 		};
 	};
 	
-	
+	/* Disabled until new models have been made.
 	class PB_WoodGate: MoreDoorBase
 	{
 		scope = 2;
