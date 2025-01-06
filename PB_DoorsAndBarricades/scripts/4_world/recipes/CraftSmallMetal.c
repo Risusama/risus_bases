@@ -2,7 +2,7 @@ class CraftSmallMetal_PB extends RecipeBase
 {
 	override void Init()
 	{
-		m_Name = "Small Metal Sheet";
+		m_Name = "Craft Small Metal Sheets";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 1;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
