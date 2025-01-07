@@ -71,11 +71,11 @@ class CraftPlankWindowBarricadeT1_PB extends RecipeBase
 };
 
 //DOOR BARRICADE
-class CraftDoorBarricadeT1_PB extends RecipeBase
+class CraftPlankDoorBarricadeT1_PB extends RecipeBase
 {
 	override void Init()
 	{
-		m_Name = "Craft Plank Door Barricade Kit";
+		m_Name = "Craft Door Barricade Kit";
 		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
 		m_AnimationLength = 1;//animation length in relative time units
 		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
@@ -143,7 +143,7 @@ class CraftDoorBarricadeT1_PB extends RecipeBase
 };
 
 //WALL KIT
-class CraftWallWoodKitT1_PB extends RecipeBase
+class CraftWoodWallKitT1_PB extends RecipeBase
 {
 	override void Init()
 	{

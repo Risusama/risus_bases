@@ -1121,6 +1121,7 @@ class CfgVehicles
 	};
 	
 	/* Disabled until new models have been made.
+	//Wood Gate
 	class PB_WoodGate: MoreDoorBase
 	{
 		scope = 2;
@@ -1153,7 +1154,7 @@ class CfgVehicles
 		};
 	};
 	
-	//MetalGate
+	//Metal Gate
 	class PB_MetalGate: MoreDoorBase
 	{
 		scope = 2;
