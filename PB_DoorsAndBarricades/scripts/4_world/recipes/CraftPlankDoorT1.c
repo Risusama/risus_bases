@@ -69,7 +69,6 @@ class CraftPlankDoorT1_PB extends RecipeBase
 	}
 };
 
-/* Disabled until new models are made
 //WOOD GATE
 class CraftWoodGateT1_PB extends RecipeBase
 {
@@ -141,4 +140,3 @@ class CraftWoodGateT1_PB extends RecipeBase
 		Debug.Log("Recipe Do method called","recipes");
 	}
 };
- */

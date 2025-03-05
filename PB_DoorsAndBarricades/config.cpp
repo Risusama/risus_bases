@@ -11,7 +11,7 @@ class CfgPatches
 			"PB_PlankDoorBarricade_Kit",
 			"PB_Well_Kit",
 			"PB_PlankWindow_Kit",
-			//"PB_WoodGate_Kit",
+			"PB_WoodGate_Kit",
 			"PB_WoodWall_Kit",
 			////////////////////////////////////////////
 			///////////////OLDNAGS KITS//////////////////////
@@ -38,7 +38,7 @@ class CfgPatches
 			"PB_Well",
 			"PB_PlankWindow",
 			"PB_MetalWindow",
-			//"PB_WoodGate",
+			"PB_WoodGate",
 			//"PB_MetalGate",
 			"PB_WoodWall",
 			//"PB_MetalWall",
@@ -474,7 +474,6 @@ class CfgVehicles
 	};
 
 	//Wood Gate Kit - T1
-	/* Disabled until new models have been made.
 	class PB_WoodGate_Kit: MoreDoorKitBase
 	{
 		scope = 2;
@@ -489,7 +488,7 @@ class CfgVehicles
 			"Material_WoodenPlanks"
 		};
 	};
-	*/
+
 	//Plank Window Kit - T1
 	class PB_PlankWindow_Kit: MoreDoorKitBase
 	{
@@ -873,6 +872,7 @@ class CfgVehicles
 			*/
 		};
 	};
+
 	/* Disabled until new models have been made.
 	//Metal Barricade T2
 	class PB_MetalBarricade: MoreDoorBase
@@ -1066,7 +1066,6 @@ class CfgVehicles
 	};
 
 	//Plank Window - T1
-
 	class PB_PlankWindow: MoreDoorBase
 	{
 		scope = 2;
@@ -1100,7 +1099,6 @@ class CfgVehicles
 	};
 
 	//Metal Window - T2
-	
 	class PB_MetalWindow: MoreDoorBase
 	{
 		scope = 2;
@@ -1119,8 +1117,7 @@ class CfgVehicles
 			};
 		};
 	};
-	
-	/* Disabled until new models have been made.
+
 	//Wood Gate
 	class PB_WoodGate: MoreDoorBase
 	{
@@ -1143,6 +1140,7 @@ class CfgVehicles
 				icon = "cat_bb_base";
 				selection = "wall";
 			};
+			/* Upgrading to Metal Gate disabled until new models are made
 			class Base
 			{
 				name = "Upgrade";
@@ -1151,9 +1149,11 @@ class CfgVehicles
 				icon = "cat_bb_material";
 				selection = "wall";
 			};
+			*/
 		};
 	};
-	
+
+	/* Disabled until new models have been made.
 	//Metal Gate
 	class PB_MetalGate: MoreDoorBase
 	{

@@ -109,7 +109,7 @@ class ActionUpgradeBarricadeT3: ActionContinuousBase
 
 };
 
-//UPGRADE PARA T2 DA BARRICADA DE PORTA
+//Upgrade Door to T2
 class ActionUpgradeDoorBarricade: ActionContinuousBase
 {
 	void ActionUpgradeDoorBarricade()
@@ -160,7 +160,7 @@ class ActionUpgradeDoorBarricade: ActionContinuousBase
 	}
 
 };
-//UPGRADE PARA T3 DA BARRICADA DE PORTA
+//Upgrade Door to T3
 class ActionUpgradeDoorBarricadeT3: ActionContinuousBase
 {
 	void ActionUpgradeDoorBarricadeT3()
@@ -212,7 +212,7 @@ class ActionUpgradeDoorBarricadeT3: ActionContinuousBase
 
 };
 
-//UPGRADE PARA T2 JANELA DE PLANK
+//Upgrade Plank Window (T1) to Metal Window (T2)
 class ActionUpgradeWindow: ActionContinuousBase
 {
 	void ActionUpgradeWindow()
@@ -264,7 +264,7 @@ class ActionUpgradeWindow: ActionContinuousBase
 
 };
 
-//UPGRADE PARA T2 DA PAREDE
+//Upgrade Wall to T2
 class ActionUpgradeWall: ActionContinuousBase
 {
 	void ActionUpgradeWall()
@@ -315,7 +315,7 @@ class ActionUpgradeWall: ActionContinuousBase
 	}
 
 };
-//UPGRADE PARA T3 DA PAREDE
+//Upgrade Wall to T3
 /*class ActionUpgradeWallT3: ActionContinuousBase
 {
 	void ActionUpgradeWallT3()
@@ -367,7 +367,7 @@ class ActionUpgradeWall: ActionContinuousBase
 
 };*/
 
-//Upgrade Gate T1 para T2
+//Upgrade Gate T1 to T2
 class ActionUpgradeGate: ActionContinuousBase
 {
 	void ActionUpgradeGate()

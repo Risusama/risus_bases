@@ -11,7 +11,7 @@ modded class PluginRecipesManagerBase
 		RegisterRecipe(new CraftWoodWallKitT1_PB);
 		RegisterRecipe(new CraftWellKit_PB);
 		RegisterRecipe(new CraftWindowPlankT1_PB);
-		//RegisterRecipe(new CraftWoodGateT1_PB);
+		RegisterRecipe(new CraftWoodGateT1_PB);
 		RegisterRecipe(new CraftSmallMetal_PB);
 		////////////////////////////////////////////
 		///////////////OLDNAGS//////////////////////
