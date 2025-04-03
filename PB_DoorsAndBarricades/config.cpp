@@ -39,7 +39,7 @@ class CfgPatches
 			"PB_PlankWindow",
 			"PB_MetalWindow",
 			"PB_WoodGate",
-			//"PB_MetalGate",
+			"PB_MetalGate",
 			"PB_WoodWall",
 			//"PB_MetalWall",
 			////////////////////////////////////////////
@@ -1140,7 +1140,6 @@ class CfgVehicles
 				icon = "cat_bb_base";
 				selection = "wall";
 			};
-			/* Upgrading to Metal Gate disabled until new models are made
 			class Base
 			{
 				name = "Upgrade";
@@ -1149,11 +1148,9 @@ class CfgVehicles
 				icon = "cat_bb_material";
 				selection = "wall";
 			};
-			*/
 		};
 	};
 
-	/* Disabled until new models have been made.
 	//Metal Gate
 	class PB_MetalGate: MoreDoorBase
 	{
@@ -1174,7 +1171,7 @@ class CfgVehicles
 			};
 		};
 	};
-	*/
+
 	////////////////////////////////////////////
 	///////////////OLDNAGS//////////////////////
 	////////////////////////////////////////////
