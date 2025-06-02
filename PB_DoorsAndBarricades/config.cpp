@@ -511,7 +511,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Small Shack Blueprint";
-		descriptionShort = "A blueprint for making a small shack.";
+		descriptionShort = "A blueprint for making a small shack. Used in combination with a toolbox.";
 		model = "PB_DoorsAndBarricades\data\Fractal\Blueprint.p3d";
 		itemSize[] = {3,1};
 		varStackMax = 1;
@@ -531,7 +531,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Medium Shack Blueprint";
-		descriptionShort = "A blueprint for making a medium sized shack.";
+		descriptionShort = "A blueprint for making a medium sized shack. Used in combination with a toolbox.";
 		model = "PB_DoorsAndBarricades\data\Fractal\Blueprint.p3d";
 		itemSize[] = {3,1};
 		varStackMax = 1;
@@ -551,7 +551,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Large Shack Blueprint";
-		descriptionShort = "A blueprint for making a large shack.";
+		descriptionShort = "A blueprint for making a large shack. Used in combination with a toolbox.";
 		model = "PB_DoorsAndBarricades\data\Fractal\Blueprint.p3d";
 		itemSize[] = {3,1};
 		varStackMax = 1;
@@ -571,7 +571,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Huge Shack Blueprint";
-		descriptionShort = "A blueprint for making a huge shack.";
+		descriptionShort = "A blueprint for making a huge shack. Used in combination with a toolbox.";
 		model = "PB_DoorsAndBarricades\data\Fractal\Blueprint.p3d";
 		itemSize[] = {3,1};
 		varStackMax = 1;
@@ -591,7 +591,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Watch Tower Blueprint";
-		descriptionShort = "A blueprint for making a watchtower.";
+		descriptionShort = "A blueprint for making a watchtower. Used in combination with a toolbox.";
 		model = "PB_DoorsAndBarricades\data\Fractal\Blueprint.p3d";
 		itemSize[] = {3,1};
 		varStackMax = 1;
@@ -611,7 +611,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Garage Blueprint";
-		descriptionShort = "A blueprint for making a garage.";
+		descriptionShort = "A blueprint for making a garage. Used in combination with a toolbox.";
 		model = "PB_DoorsAndBarricades\data\Fractal\Blueprint.p3d";
 		itemSize[] = {3,1};
 		varStackMax = 1;
@@ -631,7 +631,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		displayName = "Toolbox";
-		descriptionShort = "Used in creation of shack kits.";
+		descriptionShort = "Used in creation of shack kits. Requires a blueprint.";
 		model = "PB_DoorsAndBarricades\data\Fractal\ToolBox.p3d";
 		itemSize[] = {4,3};
 		varStackMax = 1;
