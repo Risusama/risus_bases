@@ -27,7 +27,7 @@ modded class MissionGameplay
 		GetRPCManager().SendRPC("PBConfig", "GetPBConfigCfg", null, true, null); //send RPC to server once this class starts to get cfg. Identity is null in this case becuase we are sending an RPC from client, clients can't target specific identities
 	}
 
-	void PBConfigStoreConfig(CallType type, ref ParamsReadContext ctx, ref PlayerIdentity sender, ref Object target)
+	void PBConfigStoreConfig(CallType type, ParamsReadContext ctx, PlayerIdentity sender, Object target)
     {
         ref Param1<ref PBConfig> data;
         if (type == CallType.Client)

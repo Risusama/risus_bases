@@ -17,7 +17,7 @@ modded class MissionServer
         g_Game.SetPBConfig( m_PBConfig );
     }
 
-    void GetPBConfigCfg(CallType type, ref ParamsReadContext ctx, ref PlayerIdentity sender, ref Object target)
+    void GetPBConfigCfg(CallType type, ParamsReadContext ctx, PlayerIdentity sender, Object target)
     {
         if (type == CallType.Server && sender != null) //Verify that sender is still around so we don't send a null RPC ( sending and RPC with null target will send it to all players in the session )
         {

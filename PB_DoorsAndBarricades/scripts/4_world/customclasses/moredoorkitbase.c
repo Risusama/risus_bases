@@ -8,7 +8,7 @@ class MoreDoorKitBase extends ItemBase
 	string slotPlanks = "Material_WoodenPlanks";
 	string slotMetal = "Material_MetalSheets";
 	string slotLogs = "Material_WoodenLogs";
-	string slotLogs2 = "Material_L1_WoodenLogs"
+	string slotLogs2 = "Material_L1_WoodenLogs";
 	string slotWire = "Material_MetalWire";
 	string slotStone = "Slot_Brick";
 
@@ -155,7 +155,7 @@ class MoreDoorKitBase extends ItemBase
 		return true;
 	}
 
-	override bool CanReleaseCargo(EntityAI attachment)
+	override bool CanReleaseCargo(EntityAI cargo)
 	{
 		return true;
 	}
@@ -185,7 +185,7 @@ class MoreDoorKitBase extends ItemBase
 			moreDoorKit.SetPosition(position);
 			moreDoorKit.SetOrientation(orientation);
 		}
-		SetIsDeploySound( true );
+		SetIsDeploySound(true);
 		SetLifetime(3888000);
 	}
 

@@ -12,7 +12,7 @@ modded class Hologram
 		return super.ProjectionBasedOnParent();
 	}
 
-	EntityAI PlaceEntity( EntityAI entity_for_placing )
+	override EntityAI PlaceEntity( EntityAI entity_for_placing )
 	{
 		if (entity_for_placing.IsInherited(MoreDoorBase))
 		{

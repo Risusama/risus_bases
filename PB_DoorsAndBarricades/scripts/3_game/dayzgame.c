@@ -13,7 +13,7 @@ modded class DayZGame
         return null;
     }
 
-    void SetPBConfig(ref PBConfig cfg)
+    void SetPBConfig(PBConfig cfg)
 	{
 		m_PBConfig = cfg;
 	}
