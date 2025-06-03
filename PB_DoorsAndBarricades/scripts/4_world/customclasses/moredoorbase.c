@@ -602,7 +602,7 @@ class PB_Well extends ItemBase
 	}
 };
 
-//JANELA PLANK - T1
+//Plank Window - T1
 class PB_PlankWindow extends MoreDoorBase
 {
 	override string j_moreDoorKit()
@@ -635,7 +635,7 @@ class PB_PlankWindow extends MoreDoorBase
 	}
 };
 
-//JANELA METAL - T2
+//Metal Window - T2
 class PB_MetalWindow extends MoreDoorBase
 {
 	override string j_moreDoorKit()
@@ -649,7 +649,7 @@ class PB_MetalWindow extends MoreDoorBase
 	}
 };
 
-//GATE WOOD - T1
+//Wood Gate - T1
 class PB_WoodGate extends MoreDoorBase
 {
 	override string j_moreDoorKit()
@@ -682,7 +682,7 @@ class PB_WoodGate extends MoreDoorBase
 	}
 };
 
-//GATE METAL - T2
+//Metal Gate - T2
 class PB_MetalGate extends MoreDoorBase
 {
 	override string j_moreDoorKit()
@@ -696,7 +696,7 @@ class PB_MetalGate extends MoreDoorBase
 	}
 };
 
-//METAL PEQUENO - SMALL METAL PLATE
+//SMALL METAL PLATE
 class PB_SmallMetalPlate extends Inventory_Base
 {
 	override bool CanPutInCargo( EntityAI parent )

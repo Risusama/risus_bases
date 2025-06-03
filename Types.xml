@@ -1,4 +1,4 @@
-<type name="PB_PlankDoor">
+  <type name="PB_PlankDoor">
     <lifetime>3888000</lifetime>
     <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0" />
   </type>
@@ -152,7 +152,7 @@
     <usage name="Village" />
   </type>
   <type name="BB_HugeShackBlueprint">
-<nominal>0</nominal>
+    <nominal>0</nominal>
     <lifetime>14400</lifetime>
     <restock>0</restock>
     <min>0</min>

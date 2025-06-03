@@ -249,7 +249,7 @@ class MoreDoorKitBase extends ItemBase
 	}
 };
 
-//KIT DOOR PLANK - T1
+//Plank Door Kit - T1
 class PB_PlankDoor_Kit extends MoreDoorKitBase
 {
 	override bool hasTheGoodStuff()
@@ -294,7 +294,7 @@ class PB_PlankDoor_Kit extends MoreDoorKitBase
 	}
 };
 
-//KIT DOOR WOOD - T2
+//Wood Door Kit - T2
 class PB_WoodDoor_Kit extends MoreDoorKitBase
 {
 	override bool hasTheGoodStuff()
@@ -341,7 +341,7 @@ class PB_WoodDoor_Kit extends MoreDoorKitBase
 	}
 };
 
-//KIT DOOR METAL - T3
+//Metal Door Kit - T3
 class PB_MetalDoor_Kit extends MoreDoorKitBase
 {
 	override bool hasTheGoodStuff()
@@ -395,7 +395,7 @@ class PB_MetalDoor_Kit extends MoreDoorKitBase
 	}
 };
 
-//KIT PLANK BARRICADE - T1
+//Plank Barricade Kit - T1
 class PB_PlankBarricade_Kit extends MoreDoorKitBase
 {
 	override bool hasTheGoodStuff()
@@ -439,7 +439,7 @@ class PB_PlankBarricade_Kit extends MoreDoorKitBase
 	}
 };
 
-//KIT WOOD WALL - T1
+//Wood Wall Kit - T1
 class PB_WoodWall_Kit extends MoreDoorKitBase
 {
 	override bool hasTheGoodStuff()
@@ -483,7 +483,7 @@ class PB_WoodWall_Kit extends MoreDoorKitBase
 	}
 };
 
-//KIT PLANK DOOR BARRICADE - T1
+//Plank Door Barricade Kit - T1
 class PB_PlankDoorBarricade_Kit extends MoreDoorKitBase
 {
 	override bool hasTheGoodStuff()
@@ -527,7 +527,7 @@ class PB_PlankDoorBarricade_Kit extends MoreDoorKitBase
 	}
 };
 
-//KIT WELL
+//Well Kit
 class PB_Well_Kit extends MoreDoorKitBase
 {
 	override bool hasTheGoodStuff()
@@ -581,7 +581,7 @@ class PB_Well_Kit extends MoreDoorKitBase
 	}*/
 };
 
-//KIT JANELA PLANK - T1
+//Plank Window Kit - T1
 class PB_PlankWindow_Kit extends MoreDoorKitBase
 {
 	override bool hasTheGoodStuff()
@@ -628,7 +628,7 @@ class PB_PlankWindow_Kit extends MoreDoorKitBase
 	}
 };
 
-//KIT - WOOD GATE
+//Wood Gate Kit
 class PB_WoodGate_Kit extends MoreDoorKitBase
 {
 	override bool hasTheGoodStuff()
@@ -682,7 +682,7 @@ class PB_WoodGate_Kit extends MoreDoorKitBase
 ///////////////OLDNAGS//////////////////////
 ////////////////////////////////////////////
 
-//KIT BASE WALL
+//Base Wall Kit
 class BB_BaseWall_Kit extends MoreDoorKitBase
 {
 	override bool hasTheGoodStuff()
@@ -725,7 +725,7 @@ class BB_BaseWall_Kit extends MoreDoorKitBase
 		j_goods2.SetQuantity(20);
 	}
 };
-//KIT SMALL SHACK
+//Small Shack Kit
 class BB_SmallShack_Kit extends MoreDoorKitBase
 {
 	override bool hasTheGoodStuff()
@@ -786,7 +786,7 @@ class BB_SmallShack_Kit extends MoreDoorKitBase
 		j_goods5.SetQuantity(5);
 	}
 };
-//KIT MEDIUM SHACK
+//Medium Shack Kit
 class BB_MediumShack_Kit extends MoreDoorKitBase
 {
 	override bool hasTheGoodStuff()
@@ -859,7 +859,7 @@ class BB_MediumShack_Kit extends MoreDoorKitBase
 		j_goods7.SetQuantity(10);
 	}
 };
-//KIT LARGE SHACK
+//Large Shack Kit
 class BB_LargeShack_Kit extends MoreDoorKitBase
 {
 	override bool hasTheGoodStuff()
@@ -938,7 +938,7 @@ class BB_LargeShack_Kit extends MoreDoorKitBase
 		j_goods8.SetQuantity(20);
 	}
 };
-//KIT HUGE SHACK
+//Huge Shack Kit
 class BB_HugeShack_Kit extends MoreDoorKitBase
 {
 	override bool hasTheGoodStuff()
@@ -1029,7 +1029,7 @@ class BB_HugeShack_Kit extends MoreDoorKitBase
 		j_goods10.SetQuantity(10);
 	}
 };
-//KIT WATCH TOWER
+//Watchtower Kit
 class BB_WatchTower_Kit extends MoreDoorKitBase
 {
 	override bool hasTheGoodStuff()
@@ -1120,7 +1120,7 @@ class BB_WatchTower_Kit extends MoreDoorKitBase
 		j_goods10.SetQuantity(10);
 	}
 };
-//KIT GARAGE
+//Garage Kit
 class BB_Garage_Kit extends MoreDoorKitBase
 {
 	override bool hasTheGoodStuff()

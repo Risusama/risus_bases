@@ -16,21 +16,21 @@ class PBConfig
 	private int PB_DestroyTime;
     private int PB_DismantleTime;
 	private int PB_ToolDamage;
-	//Portas T1 = Plank / T2 = Wood / T3 = Metal
+	//Door T1 = Plank / T2 = Wood / T3 = Metal
 	private int T1DoorDestroyTime;
 	private int T2DoorDestroyTime;
 	private int T3DoorDestroyTime;
-	//Barricadas e Paredes T1 = Plank / T2 = Metal / T3 = Brick
+	//Barricades and walls T1 = Plank / T2 = Metal / T3 = Brick
 	private int T1BarricadeAndWallDestroyTime;
 	private int T2BarricadeAndWallDestroyTime;
 	private int T3BarricadeAndWallDestroyTime;
-	//Tempo Destruição do Lock
+	//Dial lock destroy time
 	private int DialLockDestroyTime;
-	//
+	//Gates and Walls
 	private int T1GateWallDestroyTime;
 	private int T2GateWallDestroyTime;
 	//private int MoreDoorMetalBarricadeDestroyTime;
-	//Adicionar um novo Inteiro para ser o valor de destruição
+	//Add a new Integer to be the destruction value
 
 
 	void PBConfig()
@@ -85,20 +85,20 @@ class PBConfig
 		PB_DismantleTime = 25;
 		PB_ToolDamage = 25;
 		PB_DestroyTime = 600;
-		//Portas T1 = Plank / T2 = Wood / T3 = Metal
+		//Door T1 = Plank / T2 = Wood / T3 = Metal
 		T1DoorDestroyTime = 180;	//180
 		T2DoorDestroyTime = 600;	//600
 		T3DoorDestroyTime = 1200;	//1200
-		//Barricadas e Paredes T1 = Plank / T2 = Metal / T3 = Brick
+		//Barricades and walls T1 = Plank / T2 = Metal / T3 = Brick
 		T1BarricadeAndWallDestroyTime = 180;	//180
 		T2BarricadeAndWallDestroyTime =	600;	//600
 		T3BarricadeAndWallDestroyTime =	1200;	//1200
 		//Gates and Walls
 		T1GateWallDestroyTime = 600;
 		T2GateWallDestroyTime = 1200;
-		//Dial Lock Tempo de destruição
+		//Dial lock destroy time
 		DialLockDestroyTime = 180;
-		//Resgistra o tempo de destruição, para criar um novo adicionar uma nova linha aqui
+		//Records the time of destruction, to create a new one add a new line here
 		//MoreDoorMetalBarricadeDestroyTime = 1200;
 		Save();
 	}
@@ -148,11 +148,11 @@ class PBConfig
 		int destroyTime = -1;
 		switch( item )
 		{
-			/*	Adicionar o Nome do item no Case e no Destroy time
+			/*	Add Item Name in Case and Destroy time
 			case "MoreDoor-------":
 				destroyTime = MoreDoorMetalBarricadeDestroyTime;
 				break;*/
-			//Portas
+			//Doors
 			//T1
 			case "PB_PlankDoor":
 				destroyTime = T1DoorDestroyTime;
@@ -165,7 +165,7 @@ class PBConfig
 			case "PB_MetalDoor":
 				destroyTime = T3DoorDestroyTime;
 				break;
-			//Barricatas
+			//Barricades
 			//T1
 			case "PB_PlankBarricade":
 				destroyTime = T1BarricadeAndWallDestroyTime;
@@ -178,7 +178,7 @@ class PBConfig
 			case "PB_BrickBarricade":
 				destroyTime = T3BarricadeAndWallDestroyTime;
 				break;
-			//Paredes
+			//Walls
 			//T1
 			case "PB_WoodWall":
 				destroyTime = T1GateWallDestroyTime;
@@ -200,7 +200,7 @@ class PBConfig
 			case "PB_MetalGate":
 				destroyTime = T2GateWallDestroyTime;
 				break;
-			//DOORs Barricade
+			//Door Barricades
 			//T1
 			case "PB_PlankDoorBarricade":
 				destroyTime = T1BarricadeAndWallDestroyTime;
@@ -213,7 +213,7 @@ class PBConfig
 			case "PB_BrickDoorBarricade":
 				destroyTime = T3BarricadeAndWallDestroyTime;
 				break;
-			//Janelas
+			//Window Barricades
 			//T1
 			case "PB_PlankWindow":
 				destroyTime = T1BarricadeAndWallDestroyTime;
@@ -222,7 +222,7 @@ class PBConfig
 			case "PB_MetalWindow":
 				destroyTime = T2BarricadeAndWallDestroyTime;
 				break;
-			//Padrao se nao tiver tempo pre definido
+			//Default if there is no predefined time
 			default:
 				destroyTime = PB_DestroyTime;
 				break;

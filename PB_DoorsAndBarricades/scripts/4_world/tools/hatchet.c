@@ -21,18 +21,18 @@ modded class Hammer
 	override void SetActions()
 	{
 		super.SetActions();
-		//BARRICADA DE JANELAS
+		//Window Barricades
 		AddAction(ActionUpgradeBarricade);
 		AddAction(ActionUpgradeBarricadeT3);
-		//BARRICADA DE PORTA
+		//Door Barricades
 		AddAction(ActionUpgradeDoorBarricade);
 		AddAction(ActionUpgradeDoorBarricadeT3);
-		//JANELAS
+		//Windows
 		AddAction(ActionUpgradeWindow);
-		//PAREDES
+		//Walls
 		AddAction(ActionUpgradeWall);
 		//AddAction(ActionUpgradeWallT3);
-		//GATES
+		//Gates
 		AddAction(ActionUpgradeGate);
 	}
 };
