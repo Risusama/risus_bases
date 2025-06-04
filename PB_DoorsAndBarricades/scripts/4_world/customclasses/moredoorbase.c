@@ -564,7 +564,7 @@ class PB_Well extends ItemBase
 
 	override bool IsWell()
 	{
-		return GetWaterSourceObjectType();
+		return GetWaterSourceObjectType() == EWaterSourceObjectType.WELL;
 	}
 
 	override EWaterSourceObjectType GetWaterSourceObjectType()
@@ -577,30 +577,35 @@ class PB_Well extends ItemBase
 		return LIQUID_THROUGHPUT_WELL;
 	}
 
+	override int GetLiquidSourceType()
+	{
+		return LIQUID_CLEANWATER;
+	}
+
 	override bool CanPutIntoHands(EntityAI parent)
-    {
-        return false;
-    }
+	{
+		return false;
+	}
 
 	override bool CanPutInCargo( EntityAI parent )
 	{
-        return false;
-    }
+		return false;
+	}
 
 	override bool CanReceiveItemIntoCargo(EntityAI item)
 	{
-        return false;
-    }
+		return false;
+	}
 
 	override void SetActions()
 	{
 		super.SetActions();
 
-		AddAction(ActionWashHandsWellOne);
+		AddAction(ActionWashHandsWell);
 		AddAction(ActionDrinkWellContinuous);
 		AddAction(ActionFillBottleBase);
 	}
-};
+}
 
 //Plank Window - T1
 class PB_PlankWindow extends MoreDoorBase
