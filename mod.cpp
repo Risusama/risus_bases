@@ -7,4 +7,4 @@ tooltip = "Not much to say about this one.";		// tool tip on mouse hover
 //overview = "";									// overview
 action = "https://steamcommunity.com/sharedfiles/filedetails/?id=3083277274";	// link
 author = "Risu";									// author
-version = "20250604";								// version of the current Workshop release (YYYYMMDD[-N] where "[-N]" is a "build number" if there's multiple updates on a single day)
+version = "20250826";								// version of the current Workshop release (YYYYMMDD[-N] where "[-N]" is a "build number" if there's multiple updates on a single day)
