@@ -175,15 +175,27 @@ class MoreDoorKitBase extends ItemBase
 	// ADVANCED PLACEMENT
 	//================================================================
 
+    override bool CanBePlaced( Man player, vector position ) // Comes from entityai.c, not inventoryitem.c
+    {
+        //Print("RisusBasesDebug - in CanBePlaced");
+        if (hasTheGoodStuff())
+        {    
+            //Print("RisusBasesDebug - in CanBePlaced - hasTheGoodStuff - return true");
+            return true;
+        }
+        //Print("RisusBasesDebug - in CanBePlaced - !hasTheGoodStuff - return false");
+        return false;
+    }
+
 	override void OnPlacementComplete( Man player, vector position = "0 0 0", vector orientation = "0 0 0" )
 	{
 		super.OnPlacementComplete( player );
 
 		if ( GetGame().IsServer() && hasTheGoodStuff() )
 		{
-			EntityAI moreDoorKit = EntityAI.Cast(GetGame().CreateObjectEx(j_Door(), position, ECE_PLACE_ON_SURFACE));
-			moreDoorKit.SetPosition(position);
-			moreDoorKit.SetOrientation(orientation);
+			EntityAI moreDoorObject = EntityAI.Cast(GetGame().CreateObjectEx(j_Door(), position, ECE_PLACE_ON_SURFACE));
+			moreDoorObject.SetPosition(position);
+			moreDoorObject.SetOrientation(orientation);
 		}
 		SetIsDeploySound(true);
 		SetLifetime(3888000);
