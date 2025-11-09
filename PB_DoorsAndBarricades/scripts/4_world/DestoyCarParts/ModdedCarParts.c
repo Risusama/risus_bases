@@ -200,7 +200,7 @@ class ActionDestroyParts: ActionContinuousBase
 			CarDoor m_DParts = CarDoor.Cast(action_data.m_Target.GetObject());
 			if (m_DParts)
 			{
-				ItemBase MetalDrop = ItemBase.Cast(action_data.m_Target.GetObject().GetGame().CreateObjectEx("MetalPlate", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
+				ItemBase MetalDrop = ItemBase.Cast(GetGame().CreateObjectEx("MetalPlate", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
 				MetalDrop.SetQuantity(1);
 				m_DParts.Delete();
 				action_data.m_MainItem.AddHealth("", "Health", -20);

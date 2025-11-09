@@ -45,7 +45,7 @@ class ActionBrokeStone: ActionContinuousBase
 
 	override string GetText()
 	{
-		return "Broke";
+		return "Break";
 	}
 
 	override void OnFinishProgressServer( ActionData action_data )
@@ -53,8 +53,8 @@ class ActionBrokeStone: ActionContinuousBase
 		Object target_object = action_data.m_Target.GetObject();
 		PB_Stone ntarget = PB_Stone.Cast( target_object );
 
-		target_object.GetGame().CreateObjectEx("PB_Brick", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE);
-		target_object.GetGame().CreateObjectEx("PB_Brick", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE);
+		target_object = GetGame().CreateObjectEx("PB_Brick", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE);
+		target_object = GetGame().CreateObjectEx("PB_Brick", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE);
 
 		ntarget.Delete();
 
