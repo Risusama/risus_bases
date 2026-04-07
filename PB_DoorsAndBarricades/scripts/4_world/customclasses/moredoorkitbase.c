@@ -191,9 +191,9 @@ class MoreDoorKitBase extends ItemBase
 	{
 		super.OnPlacementComplete( player );
 
-		if ( GetGame().IsServer() && hasTheGoodStuff() )
+		if ( g_Game.IsServer() && hasTheGoodStuff() )
 		{
-			EntityAI moreDoorObject = EntityAI.Cast(GetGame().CreateObjectEx(j_Door(), position, ECE_PLACE_ON_SURFACE));
+			EntityAI moreDoorObject = EntityAI.Cast(g_Game.CreateObjectEx(j_Door(), position, ECE_PLACE_ON_SURFACE));
 			moreDoorObject.SetPosition(position);
 			moreDoorObject.SetOrientation(orientation);
 		}
@@ -223,7 +223,7 @@ class MoreDoorKitBase extends ItemBase
 
 	void PlayDeployLoopSound()
 	{
-		if ( GetGame().IsMultiplayer() && GetGame().IsClient() || !GetGame().IsMultiplayer() )
+		if ( g_Game.IsMultiplayer() && g_Game.IsClient() || !g_Game.IsMultiplayer() )
 		{
 			m_DeployLoopSound = SEffectManager.PlaySound( GetLoopDeploySoundset(), GetPosition() );
 		}
@@ -231,7 +231,7 @@ class MoreDoorKitBase extends ItemBase
 
 	void StopDeployLoopSound()
 	{
-		if ( GetGame().IsMultiplayer() && GetGame().IsClient() || !GetGame().IsMultiplayer() )
+		if ( g_Game.IsMultiplayer() && g_Game.IsClient() || !g_Game.IsMultiplayer() )
 		{
 			m_DeployLoopSound.SoundStop();
 			delete m_DeployLoopSound;

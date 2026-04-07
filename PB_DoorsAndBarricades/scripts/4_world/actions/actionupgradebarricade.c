@@ -50,7 +50,7 @@ class ActionUpgradeBarricade: ActionContinuousBase
 
 		base_building.Delete();
 
-        PB_MetalBarricade upgrade = PB_MetalBarricade.Cast( GetGame().CreateObject("PB_MetalBarricade", pos, false ));
+        PB_MetalBarricade upgrade = PB_MetalBarricade.Cast( g_Game.CreateObject("PB_MetalBarricade", pos, false ));
 		upgrade.SetPosition( pos );
 		upgrade.SetOrientation( ori );
 	}
@@ -102,7 +102,7 @@ class ActionUpgradeBarricadeT3: ActionContinuousBase
 
 		base_building.Delete();
 
-        PB_BrickBarricade upgrade = PB_BrickBarricade.Cast( GetGame().CreateObject("PB_BrickBarricade", pos, false ));
+        PB_BrickBarricade upgrade = PB_BrickBarricade.Cast( g_Game.CreateObject("PB_BrickBarricade", pos, false ));
 		upgrade.SetPosition( pos );
 		upgrade.SetOrientation( ori );
 	}
@@ -154,7 +154,7 @@ class ActionUpgradeDoorBarricade: ActionContinuousBase
 
 		base_building.Delete();
 
-        PB_MetalDoorBarricade upgrade = PB_MetalDoorBarricade.Cast( GetGame().CreateObject("PB_MetalDoorBarricade", pos, false ));
+        PB_MetalDoorBarricade upgrade = PB_MetalDoorBarricade.Cast( g_Game.CreateObject("PB_MetalDoorBarricade", pos, false ));
 		upgrade.SetPosition( pos );
 		upgrade.SetOrientation( ori );
 	}
@@ -205,7 +205,7 @@ class ActionUpgradeDoorBarricadeT3: ActionContinuousBase
 
 		base_building.Delete();
 
-        PB_BrickDoorBarricade upgrade = PB_BrickDoorBarricade.Cast( GetGame().CreateObject("PB_BrickDoorBarricade", pos, false ));
+        PB_BrickDoorBarricade upgrade = PB_BrickDoorBarricade.Cast( g_Game.CreateObject("PB_BrickDoorBarricade", pos, false ));
 		upgrade.SetPosition( pos );
 		upgrade.SetOrientation( ori );
 	}
@@ -257,7 +257,7 @@ class ActionUpgradeWindow: ActionContinuousBase
 
 		base_building.Delete();
 
-        PB_MetalWindow upgrade = PB_MetalWindow.Cast( GetGame().CreateObject("PB_MetalWindow", pos, false ));
+        PB_MetalWindow upgrade = PB_MetalWindow.Cast( g_Game.CreateObject("PB_MetalWindow", pos, false ));
 		upgrade.SetPosition( pos );
 		upgrade.SetOrientation( ori );
 	}
@@ -309,7 +309,7 @@ class ActionUpgradeWall: ActionContinuousBase
 
 		base_building.Delete();
 
-        PB_MetalWall upgrade = PB_MetalWall.Cast( GetGame().CreateObject("PB_MetalWall", pos, false ));
+        PB_MetalWall upgrade = PB_MetalWall.Cast( g_Game.CreateObject("PB_MetalWall", pos, false ));
 		upgrade.SetPosition( pos );
 		upgrade.SetOrientation( ori );
 	}
@@ -360,7 +360,7 @@ class ActionUpgradeWall: ActionContinuousBase
 
 		base_building.Delete();
 
-        PB_BrickWall upgrade = PB_BrickWall.Cast( GetGame().CreateObject("PB_BrickWall", pos, false ));
+        PB_BrickWall upgrade = PB_BrickWall.Cast( g_Game.CreateObject("PB_BrickWall", pos, false ));
 		upgrade.SetPosition( pos );
 		upgrade.SetOrientation( ori );
 	}
@@ -412,7 +412,7 @@ class ActionUpgradeGate: ActionContinuousBase
 
 		base_building.Delete();
 
-        PB_MetalGate upgrade = PB_MetalGate.Cast( GetGame().CreateObject("PB_MetalGate", pos, false ));
+        PB_MetalGate upgrade = PB_MetalGate.Cast( g_Game.CreateObject("PB_MetalGate", pos, false ));
 		upgrade.SetPosition( pos );
 		upgrade.SetOrientation( ori );
 	}

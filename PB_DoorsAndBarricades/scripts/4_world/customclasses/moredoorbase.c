@@ -63,7 +63,7 @@ class MoreDoorBase extends Fence
     override void OpenFence()
 	{
 		//server or single player
-		if ( GetGame().IsServer() )
+		if ( g_Game.IsServer() )
 		{
 			SetAnimationPhase( "Windown2", 1 );
 			SetAnimationPhase( "Fechadura", 1 );
@@ -71,14 +71,14 @@ class MoreDoorBase extends Fence
 			SetOpenedState( true );
 
 			//regenerate navmesh
-			GetGame().GetCallQueue( CALL_CATEGORY_GAMEPLAY ).CallLater( UpdateNavmesh, GATE_ROTATION_TIME_APPROX, false );
+			g_Game.GetCallQueue( CALL_CATEGORY_GAMEPLAY ).CallLater( UpdateNavmesh, GATE_ROTATION_TIME_APPROX, false );
 
 			//synchronize
 			SynchronizeBaseState();
 		}
 
 		//client or single player
-		if ( !GetGame().IsMultiplayer() || GetGame().IsClient() )
+		if ( !g_Game.IsMultiplayer() || g_Game.IsClient() )
 		{
 			//play sound
 			SoundGateOpenStart();
@@ -88,7 +88,7 @@ class MoreDoorBase extends Fence
 	override void CloseFence()
 	{
 		//server or single player
-		if ( GetGame().IsServer() )
+		if ( g_Game.IsServer() )
 		{
 			SetAnimationPhase( "Windown2", 0 );
 			SetAnimationPhase( "Fechadura", 0 );
@@ -96,14 +96,14 @@ class MoreDoorBase extends Fence
 			SetOpenedState( false );
 
 			//regenerate navmesh
-			GetGame().GetCallQueue( CALL_CATEGORY_GAMEPLAY ).CallLater( UpdateNavmesh, GATE_ROTATION_TIME_APPROX, false );
+			g_Game.GetCallQueue( CALL_CATEGORY_GAMEPLAY ).CallLater( UpdateNavmesh, GATE_ROTATION_TIME_APPROX, false );
 
 			//synchronize
 			SynchronizeBaseState();
 		}
 
 		//client or single player
-		if ( !GetGame().IsMultiplayer() || GetGame().IsClient() )
+		if ( !g_Game.IsMultiplayer() || g_Game.IsClient() )
 		{
 			//play sound
 			SoundGateCloseStart();

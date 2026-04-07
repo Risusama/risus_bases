@@ -35,7 +35,7 @@ class PBConfig
 
 	void PBConfig()
 	{
-		if (!GetGame().IsServer()) return;
+		if (!g_Game.IsServer()) return;
 
 		if (!FileExist(MODCONFIG_ROOT_FOLDER))
         {

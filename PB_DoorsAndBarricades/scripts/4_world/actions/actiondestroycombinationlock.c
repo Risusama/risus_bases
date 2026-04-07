@@ -53,7 +53,7 @@ class ActionDestroyCombinationLockMoreDoor: ActionContinuousBase
 			if ( combination_lock )
 			{
 				combination_lock.UnlockServer( action_data.m_Player, fence );
-				GetGame().GetCallQueue( CALL_CATEGORY_GAMEPLAY ).CallLater( combination_lock.DestroyLock, 200, false );
+				g_Game.GetCallQueue( CALL_CATEGORY_GAMEPLAY ).CallLater( combination_lock.DestroyLock, 200, false );
 			}
 		}
 

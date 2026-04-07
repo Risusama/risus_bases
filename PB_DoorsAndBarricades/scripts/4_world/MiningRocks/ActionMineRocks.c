@@ -1,7 +1,7 @@
 //AÇÃO PARA QUEBRAR PEDRAS = PB_STONE
 class ActionBrokeStoneCB : ActionContinuousBaseCB
 {
-	PlayerBase player = PlayerBase.Cast( GetGame().GetPlayer() );
+	PlayerBase player = PlayerBase.Cast( g_Game.GetPlayer() );
 	override void CreateActionComponent()
 	{
 		m_ActionData.m_ActionComponent = new CAContinuousTime( UATimeSpent.DEFAULT_CONSTRUCT );
@@ -53,8 +53,8 @@ class ActionBrokeStone: ActionContinuousBase
 		Object target_object = action_data.m_Target.GetObject();
 		PB_Stone ntarget = PB_Stone.Cast( target_object );
 
-		target_object = GetGame().CreateObjectEx("PB_Brick", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE);
-		target_object = GetGame().CreateObjectEx("PB_Brick", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE);
+		target_object = g_Game.CreateObjectEx("PB_Brick", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE);
+		target_object = g_Game.CreateObjectEx("PB_Brick", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE);
 
 		ntarget.Delete();
 

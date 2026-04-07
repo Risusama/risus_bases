@@ -104,7 +104,7 @@ class ActionDestroyT1eT2: ActionContinuousBase
 					//Camera check (client-only)
 					if ( camera_check )
 					{
-						if ( GetGame() && ( !GetGame().IsMultiplayer() || GetGame().IsClient() ) )
+						if ( GetGame() && ( !g_Game.IsMultiplayer() || g_Game.IsClient() ) )
 						{
 							if ( !base_building.IsFacingCamera( part_name ) )
 							{
@@ -223,7 +223,7 @@ class ActionDestroyT3: ActionContinuousBase
 					//Camera check (client-only)
 					if ( camera_check )
 					{
-						if ( GetGame() && ( !GetGame().IsMultiplayer() || GetGame().IsClient() ) )
+						if ( GetGame() && ( !g_Game.IsMultiplayer() || g_Game.IsClient() ) )
 						{
 							if ( !base_building.IsFacingCamera( part_name ) )
 							{

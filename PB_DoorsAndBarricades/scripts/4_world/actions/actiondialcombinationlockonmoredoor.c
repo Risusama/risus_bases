@@ -21,7 +21,7 @@ class ActionDialCombinationLockOnMoreDoor: ActionContinuousBase
 
 	override string GetText()
 	{
-		PlayerBase player = PlayerBase.Cast( GetGame().GetPlayer() );
+		PlayerBase player = PlayerBase.Cast( g_Game.GetPlayer() );
 		string combination_lock_text;
 		if ( player )
 		{

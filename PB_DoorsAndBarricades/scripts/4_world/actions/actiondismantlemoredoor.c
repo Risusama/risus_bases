@@ -54,7 +54,7 @@ class ActionDismantleMoreDoor: ActionContinuousBase
 		MoreDoorBase base_building = MoreDoorBase.Cast( action_data.m_Target.GetObject() );
 
 		base_building.Delete();
-		ItemBase j_door = ItemBase.Cast(GetGame().CreateObject(base_building.j_moreDoorKit(), position, false ));
+		ItemBase j_door = ItemBase.Cast(g_Game.CreateObject(base_building.j_moreDoorKit(), position, false ));
 		MoreDoorKitBase returnGoods = MoreDoorKitBase.Cast( j_door );
 		returnGoods.ReturnGoodsFromDismantle();
 		//add damage to tool
@@ -104,7 +104,7 @@ class ActionDismantleMoreDoor: ActionContinuousBase
 					//Camera check (client-only)
 					if ( camera_check )
 					{
-						if ( GetGame() && ( !GetGame().IsMultiplayer() || GetGame().IsClient() ) )
+						if ( g_Game && ( !g_Game.IsMultiplayer() || g_Game.IsClient() ) )
 						{
 							if ( base_building.IsFacingCamera( part_name ) )
 							{
@@ -178,23 +178,23 @@ class ActionDismantleWell: ActionContinuousBase
 
 		int damageToTool = g_Game.GetPBConfig().Get_MoreDoorToolDamage();
 
-		ItemBase m_Stone = ItemBase.Cast(GetGame().CreateObjectEx("PB_Brick", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
+		ItemBase m_Stone = ItemBase.Cast(g_Game.CreateObjectEx("PB_Brick", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
 		m_Stone.SetQuantity(2);
-		ItemBase m_Stone2 = ItemBase.Cast(GetGame().CreateObjectEx("PB_Brick", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
+		ItemBase m_Stone2 = ItemBase.Cast(g_Game.CreateObjectEx("PB_Brick", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
 		m_Stone2.SetQuantity(2);
-		ItemBase m_Stone3 = ItemBase.Cast(GetGame().CreateObjectEx("PB_Brick", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
+		ItemBase m_Stone3 = ItemBase.Cast(g_Game.CreateObjectEx("PB_Brick", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
 		m_Stone3.SetQuantity(2);
-		ItemBase m_Stone4 = ItemBase.Cast(GetGame().CreateObjectEx("PB_Brick", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
+		ItemBase m_Stone4 = ItemBase.Cast(g_Game.CreateObjectEx("PB_Brick", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
 		m_Stone4.SetQuantity(2);
-		ItemBase m_Stone5 = ItemBase.Cast(GetGame().CreateObjectEx("PB_Brick", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
+		ItemBase m_Stone5 = ItemBase.Cast(g_Game.CreateObjectEx("PB_Brick", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
 		m_Stone5.SetQuantity(2);
-		ItemBase m_Stone6 = ItemBase.Cast(GetGame().CreateObjectEx("PB_Brick", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
+		ItemBase m_Stone6 = ItemBase.Cast(g_Game.CreateObjectEx("PB_Brick", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
 		m_Stone6.SetQuantity(2);
-		ItemBase m_WoodPlank = ItemBase.Cast(GetGame().CreateObjectEx("WoodenPlank", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
+		ItemBase m_WoodPlank = ItemBase.Cast(g_Game.CreateObjectEx("WoodenPlank", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
 		m_WoodPlank.SetQuantity(10);
-		ItemBase m_WoodLog = ItemBase.Cast(GetGame().CreateObjectEx("WoodenLog", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
+		ItemBase m_WoodLog = ItemBase.Cast(g_Game.CreateObjectEx("WoodenLog", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
 		m_WoodLog.SetQuantity(1);
-		ItemBase m_Nail = ItemBase.Cast(GetGame().CreateObjectEx("Nail", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
+		ItemBase m_Nail = ItemBase.Cast(g_Game.CreateObjectEx("Nail", action_data.m_Player.GetPosition(), ECE_PLACE_ON_SURFACE));
 		m_Nail.SetQuantity(16);
 
 		m_Well.Delete();
