@@ -116,10 +116,12 @@ class CfgMods
 };
 class CfgVehicles
 {
-	class Fence;
+	//class Fence;
+	class BaseBuildingBase;
 	class Inventory_Base;
 	class Container_Base;
-	class MoreDoorBase: Fence
+	class HouseNoDestruct;
+	class MoreDoorBase: BaseBuildingBase
 	{
 		scope = 0;
 		displayName = "Door";
